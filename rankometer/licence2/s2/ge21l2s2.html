@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankometer</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="https://i.ibb.co/M5TkS8J/image-removebg-preview.png">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="topnav" id="myTopnav" style="margin: -8px;">
+        <a href="" class="active" style="color:rgb(0, 0, 0);font-weight: bold;">Rankometer  —  GE21 S2 </a>
+        <a href="../index.html">Home</a>
+        <a href="../index.html">G - PAC</a>
+        <a href="https://api.whatsapp.com/send/?phone=994706475505&text=Hi+Fuad.&type=phone_number&app_absent=0">Contact</a>
+        <a href="https://api.whatsapp.com/send/?phone=994777397339&text=Hi+Cedi.&type=phone_number&app_absent=0">Contributers</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+    <br>
+<br>
+      <div class="info">
+        <center>
+        <img src="https://i.ibb.co/1KHYfRQ/image.png" alt="text" style="width: 200px;height: 50px;">
+
+        </center>
+        <p>Section : GE S2<br>BSc-2021</p><hr>   
+        <p>GPA : For announced grades, out of 20</p>
+        <p>Outlines : Grades outside 1σ
+        <details style="margin-top: -15px;">
+            <summary>Click to see more</summary>
+            <p>"Grades outside 1σ" refers to those grades that are either above or below one standard deviation from the mean. These grades are considered to be either significantly higher or lower than average, respectively.</p>
+          </details>
+        </p><hr>
+        <p><span style="color: red;font-weight: bold;">*</span>If you notice anything incorrect, please let us know by using the  <a href="https://api.whatsapp.com/send/?phone=994706475505&text=Hi+Fuad+I+guess+sth+is+wrong+in+my+data.&type=phone_number&app_absent=0" style="color: #c98600;">Contact</a> section.</p>
+        <hr><p>Last modified : 7 May 2023</p>
+    </div>
+
+    <input type="text" id="myInput" onkeyup="myFunctiona()" placeholder="Search for names.." title="Type in a name">
+    <br><br>
+
+
+
+    
+    <table id="myTable">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>ID</th>
+            <th>Faculty</th>
+            <th>Name</th>
+            <th>GPA</th>
+            <th>Percentage</th>
+            <th>Outlines</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>22122025</td>
+                <td>GE</td>
+                <td>Maharramli Anar</td>
+                <td>15,6262</td>
+                <td>78,14</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>22122028</td>
+                <td>GE</td>
+                <td>Guliyeva Leyla</td>
+                <td>14,4545</td>
+                <td>72,28</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>22122038</td>
+                <td>GE</td>
+                <td>Hajimuradova Narmin</td>
+                <td>14,125</td>
+                <td>70,63</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>22122006</td>
+                <td>GE</td>
+                <td>Bandiyeva Laman</td>
+                <td>13,8067</td>
+                <td>69,04</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>22121995</td>
+                <td>GE</td>
+                <td>Ahmadov Javidan</td>
+                <td>13,5417</td>
+                <td>67,71</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>22122017</td>
+                <td>GE</td>
+                <td>Abbasli Madina</td>
+                <td>13,2789</td>
+                <td>66,4</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>22122246</td>
+                <td>GE</td>
+                <td>Sadıgova Aysel</td>
+                <td>12,5684</td>
+                <td>62,85</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>22122016</td>
+                <td>GE</td>
+                <td>Hasanova Samira</td>
+                <td>12,4906</td>
+                <td>62,46</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>22121998</td>
+                <td>GE</td>
+                <td>Mustafayeva Zhala</td>
+                <td>11,8195</td>
+                <td>59,1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>22122254</td>
+                <td>GE</td>
+                <td>Shamshiyev Elmir</td>
+                <td>11,7034</td>
+                <td>58,52</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>22022829</td>
+                <td>GE</td>
+                <td>Gahramanlı Riad</td>
+                <td>11,6467</td>
+                <td>58,24</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>22122276</td>
+                <td>GE</td>
+                <td>Jafarova Gunay</td>
+                <td>11,5112</td>
+                <td>57,56</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>22122283</td>
+                <td>GE</td>
+                <td>Huseynova Laman</td>
+                <td>11,4034</td>
+                <td>57,02</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>22122264</td>
+                <td>GE</td>
+                <td>Gadirov Zahid</td>
+                <td>11,3406</td>
+                <td>56,71</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>22122013</td>
+                <td>GE</td>
+                <td>Mammadov Gasım</td>
+                <td>11,1467</td>
+                <td>55,74</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>22122249</td>
+                <td>GE</td>
+                <td>Isayeva Nurana</td>
+                <td>11,0667</td>
+                <td>55,34</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>22122278</td>
+                <td>GE</td>
+                <td>Abbasova Aytan</td>
+                <td>11,035</td>
+                <td>55,18</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>22122255</td>
+                <td>GE</td>
+                <td>Ildarov Fuad</td>
+                <td>11,0262</td>
+                <td>55,14</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>22122241</td>
+                <td>GE</td>
+                <td>Abdulova Fidan</td>
+                <td>10,9406</td>
+                <td>54,71</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>22122253</td>
+                <td>GE</td>
+                <td>Mammadov Mahammad</td>
+                <td>10,7978</td>
+                <td>53,99</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>22121978</td>
+                <td>GE</td>
+                <td>Aliyeva Narmin</td>
+                <td>10,6956</td>
+                <td>53,48</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>22122268</td>
+                <td>GE</td>
+                <td>Jabrayıl-zada Kamilla</td>
+                <td>10,4345</td>
+                <td>52,18</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>22122260</td>
+                <td>GE</td>
+                <td>Gadirov Javid</td>
+                <td>9,5162</td>
+                <td>47,59</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>22122274</td>
+                <td>GE</td>
+                <td>Rustamov Avaz</td>
+                <td>9,2678</td>
+                <td>46,34</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>22122030</td>
+                <td>GE</td>
+                <td>Gasimov Rasim</td>
+                <td>8,9834</td>
+                <td>44,92</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>22121990</td>
+                <td>GE</td>
+                <td>Maharramli Huseyn</td>
+                <td>8,0984</td>
+                <td>40,5</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>22122280</td>
+                <td>GE</td>
+                <td>Gamarli Rafig</td>
+                <td>8,0556</td>
+                <td>40,28</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>22122000</td>
+                <td>GE</td>
+                <td>Mammadov Salim</td>
+                <td>7,4556</td>
+                <td>37,28</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>22122258</td>
+                <td>GE</td>
+                <td>Bashiri Elvin</td>
+                <td>7,0767</td>
+                <td>35,39</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>22122022</td>
+                <td>GE</td>
+                <td>Aliyeva Fatima</td>
+                <td>6,3484</td>
+                <td>31,75</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>22122010</td>
+                <td>GE</td>
+                <td>Pashayeva Nargiz</td>
+                <td>5,5989</td>
+                <td>28</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>22022908</td>
+                <td>GE</td>
+                <td>Gahramanli Vahid</td>
+                <td>4,9084</td>
+                <td>24,55</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+
+
+    
+    
+      <!-- footer section start -->
+       <footer id="footer" style="background-color: black">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <a href="../index.html"><img src="https://i.ibb.co/PrqVKHy/image.png" alt="" style="width: 150px;height: 65px;" class="img-fluid logo-footer"></a>
+                          <div class="footer-about">
+                              <p style="color: #878787; font-size: 115%;">Welcome to our website! We offer a range of tools and resources to help you achieve your goals, including GPA calculators, study tips, career advice, and more. Our team of experts is here to support you in your personal and professional development.</p>
+                          </div>
+                          <br>
+              </div>
+              <div class="col-md-3">
+                <div class="useful-link">
+                  <h1 style="font-size: 160%;color: white;">Useful Links<h4 style="margin-top: -20px; color: #f8b739;margin-bottom: -15px;">_____</h4></h1>
+                  <div class="usse-links"><br>
+                      <li><a href="../index.html#home"><i></i><h1 style="font-size: 135%; color: #878787;">Home</h1></a></li>
+                      <li><a href="../index.html#about"><i></i><h1 style="font-size: 135%; color: #878787;">About us</h1></a></li>
+                      <li><a href="../index.html#services"><i></i><h1 style="font-size: 135%; color: #878787;">Services</h1></a></li>
+                      <li><a href="https://api.whatsapp.com/send/?phone=994706475505&text=Hi+Fuad.&type=phone_number&app_absent=0"><i></i><h1 style="font-size: 135%; color: #878787;">Contact</h1></a></li>
+                  </div>
+                </div>
+      
+              </div>
+              <br>
+                      <div class="col-md-3">
+                            <div class="social-links">
+                  <h1 style="font-size: 160%;color: white;">Follow us<h4 style="margin-top: -20px; color: #f8b739;margin-bottom: 35px;">_____</h4></h1>
+                  <div class="footer-social-icon">
+                      <a href="https://www.facebook.com/fuad.ildarov.3"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                      <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter twitter-bg"></i></a>
+                      <a href="https://www.instagram.com/ildarovfuad/"><i class="fab fa-instagram instagram-bg"></i></a>
+                      <a href="https://www.linkedin.com/in/fuad-ildarov-1a76b5220/"><i class="fab fa-linkedin linkedin-bg"></i></a>
+                  </div>
+                </div>
+                      <br>  
+                      <div class="row">
+                  <h1 style="font-size: 160%;color: #ffffff;">Find us<h4 style="margin-top: -20px; color: #f8b739;margin-bottom: 35px;">_____</h4></h1>
+                      <div class="col-xl-4 col-md-4 mb-30">
+                              <div class="single-cta">
+                                      <i class="fas fa-map-marker-alt" style=" color: #f8b739;display: inline-block;font-size: 100%;"></i>
+                                      <span style="font-size: 100%; color: #878787;display: inline-block;">  NIZAMI STR. 183 BAKU</span>
+                              </div>
+                          </div><br>
+                          <div class="col-xl-4 col-md-4 mb-30">
+                              <div class="single-cta">
+                                     <i class="fas fa-phone" style=" color: #f8b739;display: inline-block;font-size: 100%;"></i>
+                                      <span style="font-size: 100%; color: #878787;display: inline-block;">  +994 70 647 55 05</span>
+                              </div>
+                          </div><br>
+                          <div class="col-xl-4 col-md-4 mb-30">
+                              <div class="single-cta">
+                                     <i class="far fa-envelope-open" style=" color: #f8b739;display: inline-block;font-size: 100%;"></i>
+                                      <span style="font-size: 100%; color: #878787;display: inline-block;">  g.pac@info.com</span>
+                              </div>
+                          </div>
+                      </div>
+                        </div>
+                      
+            </div>
+          </div>
+      
+        </footer>
+        <!-- footer section end -->
+        <!-- footer copy right section start -->
+        <section id="copy-right" style="font-family: sans-serif;">
+          <div class="copy-right-sec">
+              <div class="copyright-text">
+                  <p>Copyright &copy; 2023 | G-PAC</p>
+                  <p>Designed by <a href="https://github.com/caretot?tab=repositories">Fuad Ildarov</a></p>
+              </div>
+          </div>
+        </section>
+        <!-- footer copy right section end -->
+    
+      <script>
+        function myFunctiona() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[3];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+       <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+
+
+
+
+</body>
+</html>
