@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L1S2 - CS</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="https://i.ibb.co/gMZsK6d/Modern-Letter-G-Logo-removebg-preview.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-rG5TN5Sv/8RkA9X2PdN4Nq4Rp1+D4CfflQ+LVCst3FDq3APnbuO7F9OjDy+7VfJiOzR0V/BfKn/QsZ7VxITwdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="cs.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Kb4T4p0DfMvpB8C+hKOU7A5fBLytJ+Qv5K9HhdL5z5J5py5nKwq8AaW2Q12cSsfS0ZlKjR9lWlsfJx/hufLzCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: rgb(0, 0, 0);">
+	
+	<form style="margin-top: 31px;">
+		<h1 style="text-align: center;font-size: 4.5rem;">
+		<a href="../../index.html"><img src="
+			https://i.ibb.co/gMZsK6d/Modern-Letter-G-Logo-removebg-preview.png
+			" alt="icon" style="margin-top: 50px;margin-bottom: 50px; display: inline-block; vertical-align: middle; margin-left: 0px;height: 10rem;width: 10rem;">
+		</a><br>
+			<a href="../../index.html"><span style="display: inline-block; vertical-align: middle;text-align: center;">GPA CALCULATOR</span></a>
+		</h1><br><hr>
+		<h1 style="text-align: center;font-size: 4rem;">
+			<span style="display: inline-block; vertical-align: middle;">L1 ► S2 ► CS</span>
+			<img src="
+			https://i.ibb.co/CPCkqFg/images-removebg-preview-1.png
+			" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 0px;height: 3rem;width: 3rem;">
+
+		</h1><hr>
+		<h1 style="text-align: center;font-size: 2.5rem;">
+			<span style="display: inline-block; vertical-align: middle;">Leave blank what you don't know <br>
+				Put 0 if you got 0 <br>
+				Use . not ,</span>
+
+		</h1> <br><br><br>
+		<fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> MATH</span>
+				<img src="
+				https://cdn-icons-png.flaticon.com/128/3771/3771278.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+			<div class="element"><label for="math-cc1">MID</label>
+			<input type="text" id="math-cc1" name="math-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">2</h1></div>
+
+			<div class="element"><label for="math-cc2">QUIZ</label>
+			<input type="text" id="math-cc2" name="math-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1</h1></div>
+
+			<div class="element"><label for="math-cc3">FINAL</label>
+			<input type="text" id="math-cc3" name="math-cc3" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">3</h1></div>
+            </div>
+		</fieldset>
+
+		<fieldset>
+            <legend>
+				<span style="display: inline-block; vertical-align: middle;"> PHYSICS</span>
+				<img src="
+				https://cdn-icons-png.flaticon.com/128/7339/7339588.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+            <div class="element"><label for="phy-cc1">MID</label>
+			<input type="text" id="phy-cc1" name="phy-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1</h1></div>
+
+			<div class="element"><label for="phy-cc2">FINAL</label>
+			<input type="text" id="phy-cc2" name="phy-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">2</h1></div>
+
+            <div class="element"><label for="phy-cc2">LAB</label>
+            <input type="text" id="phy-cc3" name="phy-cc3" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">3</h1></div>
+
+            </div>
+            <br>     
+        </fieldset>
+
+		<fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> FRENCH</span>
+				<img src="
+				https://cdn-icons-png.flaticon.com/128/299/299753.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+			<div class="element"><label for="fr-cc1">MID</label>
+			<input type="text" id="fr-cc1" name="fr-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.5</h1></div>
+
+			<div class="element"><label for="fr-cc2">ORAL</label>
+			<input type="text" id="fr-cc2" name="fr-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.75</h1></div>
+
+			<div class="element"><label for="fr-cc3">FINAL</label>
+			<input type="text" id="fr-cc3" name="fr-cc3" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.75</h1></div>
+            </div>
+            <br>
+		</fieldset>
+
+        <fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> ENGLISH</span>
+				<img src="
+				https://cdn-icons-png.flaticon.com/128/299/299688.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+			<div class="element"><label for="en-cc1">MID</label>
+			<input type="text" id="en-cc1" name="en-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.5</h1></div>
+
+			<div class="element"><label for="en-cc2">ORAL</label>
+			<input type="text" id="en-cc2" name="en-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.75</h1></div>
+
+			<div class="element"><label for="en-cc3">FINAL</label>
+			<input type="text" id="en-cc3" name="en-cc3" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.75</h1></div>
+            </div>
+            <br>
+		</fieldset>
+
+        <fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> BUSINESS</span>
+				<img src="
+				https://cdn-icons-png.flaticon.com/128/3135/3135727.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+			<div class="element"><label for="bs-cc1">MID</label>
+			<input type="text" id="bs-cc1" name="bs-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1</h1></div>
+
+			<div class="element"><label for="bs-cc2">FINAL</label>
+			<input type="text" id="bs-cc2" name="bs-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1</h1></div>
+
+            </div>
+            <br>
+		</fieldset>
+
+
+        <fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> DATA STRC</span>
+				<img src="
+				https://i.ibb.co/BzVkZRx/image.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+			<div class="element"><label for="dtstrc-cc1">MID</label>
+			<input type="text" id="dtstrc-cc1" name="dtstrc-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1.8</h1></div>
+
+			<div class="element"><label for="dtstrc-cc2">PW</label>
+			<input type="text" id="dtstrc-cc2" name="dtstrc-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1.8</h1></div>
+
+			<div class="element"><label for="dtstrc-cc3">FINAL</label>
+			<input type="text" id="dtstrc-cc3" name="dtstrc-cc3" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">2.4</h1></div>
+
+            </div>
+            <br>
+		</fieldset>
+
+
+        <fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> COMP ARC</span>
+				<img src="
+				https://i.ibb.co/bgNQ25C/image.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+			<div class="element"><label for="cmparc-cc1">MID</label>
+			<input type="text" id="cmparc-cc1" name="cmparc-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.5</h1></div>
+
+			<div class="element"><label for="cmparc-cc2">PW</label>
+			<input type="text" id="cmparc-cc2" name="cmparc-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1</h1></div>
+
+			<div class="element"><label for="cmparc-cc3">FINAL</label>
+			<input type="text" id="cmparc-cc3" name="cmparc-cc3" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1.5</h1></div>
+
+            </div>
+            <br>
+		</fieldset>
+
+
+        <fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> DATABASE</span>
+				<img src="
+				https://i.ibb.co/3Fw93Y1/image.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+            <div class="elements">
+			<div class="element"><label for="database-cc1">CLASS</label>
+			<input type="text" id="database-cc1" name="database-cc1" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">.3</h1></div>
+
+			<div class="element"><label for="database-cc2">REP + HW</label>
+			<input type="text" id="database-cc2" name="database-cc2" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1.2</h1></div>
+
+			<div class="element"><label for="database-cc3">FINAL</label>
+			<input type="text" id="database-cc3" name="database-cc3" min="0" max="20" oninput="calculateGPA()"><h1 style="font-size: 2.95rem;">1.5</h1></div>
+
+            </div>
+            <br>
+		</fieldset>
+
+
+
+
+	</form>
+
+<br><br>
+
+	<form id="resultcolor">
+
+		
+        <fieldset>
+			<legend>
+				<span style="display: inline-block; vertical-align: middle;"> RESULTS</span>
+				<img src="
+				https://cdn-icons-png.flaticon.com/128/2783/2783924.png
+				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 0px;height: 4rem;width: 4rem;">
+				 
+			</legend>
+			<br>
+		  	<div class="result">
+				<h1 style="font-size: 400%;">
+					GPA : 
+					<span id="gpa"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);margin-bottom: 2px;" id="percentage"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1>
+				<h1 style="font-size: 400%;;">
+					CGPA : 
+					<span id="cgpa"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="cpercentage"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+					<span></span>
+				</h1><hr>
+				<h1>
+					MATH : 
+					<span id="math"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="mathp"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+				<h1>
+					PHYSICS : 
+					<span id="phy"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="phyp"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+				<h1>
+					FRENCH : 
+					<span id="fr"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="frp"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+				<h1>
+					ENGLISH : 
+					<span id="en"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="enp"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+				<h1>
+					BUSINESS : 
+					<span id="bs"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="bsp"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+				<h1>
+					DATA STRC : 
+					<span id="dtstrc"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="dtstrcp"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+				<h1>
+					COMP ARC : 
+					<span id="cmparc"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="cmparcp"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+				<h1>
+					DATABASE : 
+					<span id="database"></span>
+					<span>  </span>
+					<span style="color: rgb(146, 146, 146);font-size: 100%;margin-bottom: 2px;" id="databasep"></span>
+					<span style="color:rgb(146, 146, 146)">%</span>
+				</h1><hr>
+			</div>
+
+		</fieldset>
+
+	</form>
+
+<br><br>
+<hr style="background-color: #f8b739;padding-bottom: 15px;">
+ <!-- footer section start -->
+ <footer id="footer" style="background-color: black">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-3">
+		  <a href="index.html"><img src="https://i.ibb.co/PrqVKHy/image.png" alt="" style="width: 300px;height: 130px;" class="img-fluid logo-footer"></a>
+					<div class="footer-about">
+						<p style="color: #878787;">Welcome to our website! We offer a range of tools and resources to help you achieve your goals, including GPA calculators, study tips, career advice, and more. Our team of experts is here to support you in your personal and professional development.</p>
+					</div>
+					<br>
+		</div>
+		<div class="col-md-3">
+		  <div class="useful-link">
+			<h1 style="font-size: 250%;">Useful Links<h4 style="margin-top: -60px; color: #f8b739;margin-bottom: 35px;">_____</h4></h1>
+			<div class="use-links">
+				<li style="display: inline-block;"><a href="../../index.html#home"><i class="fa-solid fa-angles-right"></i><h1 style="font-size: 270%;">Home</h1></a></li>
+				<li style="display: inline-block;"><a href="../../index.html#about"><i class="fa-solid fa-angles-right"></i><h1 style="font-size: 270%;">                  About us</h1></a></li><br>
+				<li style="display: inline-block;"><a href="../../index.html#services"><i class="fa-solid fa-angles-right"></i><h1 style="font-size: 270%;">Services</h1></a></li>
+				<li style="display: inline-block;"><a href="https://api.whatsapp.com/send/?phone=994706475505&text=Hi+Fuad.&type=phone_number&app_absent=0"><i class="fa-solid fa-angles-right"></i><h1 style="font-size: 270%;">             Contact</h1></a></li>
+			</div>
+		  </div>
+
+		</div>
+		<br>
+				<div class="col-md-3">
+					  <div class="social-links">
+			<h1 style="font-size: 250%;">Follow us<h4 style="margin-top: -60px; color: #f8b739;margin-bottom: 35px;">_____</h4></h1>
+			<div class="footer-social-icon">
+				<a href="https://www.facebook.com/fuad.ildarov.3"><i class="fab fa-facebook-f facebook-bg"></i></a>
+				<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter twitter-bg"></i></a>
+				<a href="https://www.instagram.com/ildarovfuad/"><i class="fab fa-instagram instagram-bg"></i></a>
+				<a href="https://www.linkedin.com/in/fuad-ildarov-1a76b5220/"><i class="fab fa-linkedin linkedin-bg"></i></a>
+			</div>
+		  </div>
+				<br>  
+<hr><br>
+
+
+				<div class="row">
+			<h1 style="font-size: 250%;">Find us<h4 style="margin-top: -60px; color: #f8b739;margin-bottom: 35px;">_____</h4></h1>
+				<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							    <i class="fas fa-map-marker-alt" style=" color: #f8b739;display: inline-block;font-size: 250%;"></i>
+								<span style="font-size: 250%; color: #878787;display: inline-block;">  NIZAMI STR. 183 BAKU, AZERBAIJAN</span>
+						</div>
+					</div><br>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							   <i class="fas fa-phone" style=" color: #f8b739;display: inline-block;font-size: 250%;"></i>
+								<span style="font-size: 250%; color: #878787;display: inline-block;">  +994 70 647 55 05</span>
+						</div>
+					</div><br>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							   <i class="far fa-envelope-open" style=" color: #f8b739;display: inline-block;font-size: 250%;"></i>
+								<span style="font-size: 250%; color: #878787;display: inline-block;">  g.pac@info.com</span>
+						</div>
+					</div><br>
+				</div>
+				  </div>
+				
+	  </div>
+	</div>
+
+  </footer>
+  <!-- footer section end -->
+  <!-- footer copy right section start -->
+  <section id="copy-right">
+	<div class="copy-right-sec">
+		<div class="copyright-text">
+			<p>Copyright &copy; 2023 | G-PAC</p>
+			<p>Designed by <a href="https://github.com/caretot?tab=repositories">Fuad Ildarov</a></p>
+		</div>
+
+
+	</div>
+
+  </section>
+  <!-- footer copy right section end -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
+
+</body>
+</html>
