@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'sans-serif';
+    font-family: 'Lato';
   }
   
   html {
@@ -27,11 +27,13 @@
   
   header {
     padding: 0;
+    font-family: 'Lato';
     margin: 0;
   }
   
   .nav__container,
   header {
+    font-family: 'Lato';
     width: 100%;
   }
   
