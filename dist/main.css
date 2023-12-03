@@ -11,6 +11,9 @@
     box-sizing: border-box;
     font-family: 'Lato';
   }
+  .section1 p{
+    font-weight: 500;
+  }
   
   *,
   :after,
@@ -28,6 +31,7 @@
   header {
     padding: 0;
     font-family: 'Lato';
+    font-weight: 400;
     margin: 0;
   }
   
@@ -450,19 +454,27 @@
 
 
 
-
-
-
-
   .pageheader{
     margin-top: 17px;
     color: rgb(0, 251, 251);
+  }
+  .pageheader1{
+    margin-top: 17px;
+    color: rgb(29, 120, 120);
   }
 
 
 
   @media screen and (min-width: 800px) {
     .pageheader{
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      color: transparent;
+      height: 0px;
+      width: 0px;
+    }
+    .pageheader1{
       -webkit-user-select: none; /* Safari */
       -ms-user-select: none; /* IE 10 and IE 11 */
       user-select: none; /* Standard syntax */
