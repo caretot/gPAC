@@ -1,11 +1,15 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lato';
   }
   
   html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Lato';
   }
   
   *,
@@ -16,8 +20,8 @@
   }
   
   body {
-    width: 100%;
-    font-family: Segoe UI, Frutiger, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    width: 100%;    
+    font-family: 'Lato';
     color: #222;
   }
   
@@ -76,6 +80,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     overflow: hidden;
+    font-family: 'Lato';
   }
   
   .showing {
