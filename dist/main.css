@@ -1,15 +1,14 @@
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato';
+    font-family: 'Roboto',sans-serif;
   }
   
   html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Lato';
   }
   .section1 p{
     font-weight: 500;
@@ -24,20 +23,17 @@
   
   body {
     width: 100%;    
-    font-family: 'Lato';
     color: #222;
   }
   
   header {
     padding: 0;
-    font-family: 'Lato';
     font-weight: 400;
     margin: 0;
   }
   
   .nav__container,
   header {
-    font-family: 'Lato';
     width: 100%;
   }
   
@@ -86,7 +82,6 @@
     -ms-flex-direction: column;
     flex-direction: column;
     overflow: hidden;
-    font-family: 'Lato';
   }
   
   .showing {
@@ -189,7 +184,7 @@
     font-family: Font Awesome\ 5 Free;
     font-weight: 900;
     font-size: 0.875rem;
-    padding-left: 5px;
+    padding-left: 0px;
     color: #ffffff;
   }
   
@@ -607,21 +602,25 @@
   
     .nav__menu .dropdown ul li {
       padding: 0.7rem;
-      background-color: rgb(128, 87, 0);
+      background-color: rgb(149, 149, 149);
       position: relative;
       text-align: center;
-      transition: 1s;
+      transition: 3s;
+      border-left: 1px solid rgb(149, 149, 149);
+      border-right: 1px solid rgb(149, 149, 149);
     }
   
     .nav__menu .dropdown ul li:hover {
-      background-color: rgb(255, 179, 0);
+      background-color: rgb(0, 0, 0);
       cursor: pointer;
       text-align: center;
       transition: 1s;
+      border-left: 1px solid rgb(34, 255, 0);
+      border-right: 1px solid rgb(34, 255, 0);
     }
   
     .nav__menu .dropdown ul li:hover a {
-      color: rgb(0, 251, 251);
+      color: rgb(0,251,251);
       cursor: pointer;
     }
   
