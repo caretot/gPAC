@@ -1,0 +1,230 @@
+form {
+  width: 90%;
+  margin: auto;
+}
+
+fieldset {
+  margin: 1rem 0;
+  padding: 0rem;
+  border: 1px solid #ffffff;
+  border-radius: 1.1rem;
+  background-color: rgba(0, 125, 156, 0.7);
+}
+
+fieldset fieldset{
+  border: 1px solid rgb(116, 255, 250)
+}
+
+fieldset fieldset legend span{
+  font-size: 1rem;
+}
+fieldset fieldset legend img{
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+h1 span{
+  font-size: 2.2rem;
+}
+legend {
+  font-weight: bold;
+}
+legend span{
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+legend img{
+  width: 2rem;
+  height: 2rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  height: 70px;
+  width: 100%;
+  max-width: 70px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 0.9rem;
+  border: 3px solid #000000;
+  font-size: 1.15rem;
+  margin: auto;
+  padding: 0.3rem;
+  background-color: rgb(206, 206, 206);
+  color: black;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #008cff;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+button[type="button"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="button"]:hover {
+  background-color: #0c7cd5;
+}
+
+/* Custom styles for the GPA Calculator */
+form {
+  background-color: #363636;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+  font-weight: bold;
+}
+
+legend {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+button[type="button"] {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  background-color: #1e88e5;
+}
+
+button[type="button"]:hover {
+  background-color: #040358;
+}
+
+
+.element {
+      max-width: 300px;
+      height: 100px;
+      display: inline-block;
+      background-color: transparent;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 0.5rem;
+      text-align: center;
+      align-items: center;
+      padding: auto;
+      margin: auto;
+      font-size: 1.2rem;
+}
+.element h1{
+  color: white;
+}
+
+.elements{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+.showdata {
+color: black;
+font-size: 1.2rem;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+#form-group {
+padding: 20px;
+}
+
+
+.result{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.result h1{
+font-size: 1.5rem;
+margin-bottom: 2rem;
+}
+
+.result h1 span{
+font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:800px) {
+  #calculation,#resultation { 
+    flex: 1;
+    border: 2px solid blueviolet;
+    margin: 40px;
+    padding: 45px ;
+  } 
+  .flex-parent-element {
+    display: flex;
+    width: 95%;
+    margin:auto;
+  }
+  fieldset{
+    margin: auto;
+  }
+  .section1{
+    padding: auto;
+  }
+  #resultation fieldset{
+    margin-bottom: 3rem;
+  }
+  .result h1{
+    font-size: 1.2rem;
+    color: rgb(203, 255, 203);
+  }
+  .result h1 span{
+    font-size: 1.2rem;
+    color: rgb(255, 186, 186);
+  }
+  
+  }
+
+
+
+@media screen and (max-width:799px) {
+  .result h1{
+    font-size: 1rem;
+    color: rgb(203, 255, 203);
+  }
+  .result h1 span{
+    font-size: 1rem;
+    color: rgb(255, 186, 186);
+  }
+  
+  }
+      
