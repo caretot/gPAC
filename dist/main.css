@@ -444,7 +444,12 @@
   }
 
 
-
+  .fenometer{
+    background: linear-gradient(to right, rgb(208, 180, 0), red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
 
 
 

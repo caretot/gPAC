@@ -780,7 +780,7 @@ All this is done for any sub-level being entered.
 	border:0.1rem solid rgb(124, 160, 198);
 	color: rgb(173, 173, 173);
 	transition:0.4s;
-	box-shadow: rgba(187, 0, 0, 0.7) 0px 25px 20px -20px;}
+	box-shadow: rgba(201, 201, 201, 0.76) 0px 25px 20px -20px;}
 
 .demo-2 .dl-menuwrapper button:hover,
 .demo-2 .dl-menuwrapper button.dl-active,
@@ -812,3 +812,25 @@ All this is done for any sub-level being entered.
 	color: rgb(255, 255, 255);
 	transition:0.4s;
 	box-shadow: rgba(0, 184, 204, 0.3) 0px 25px 20px -20px;}
+
+
+
+
+/* Demo 2b */
+.demo-2b .dl-menuwrapper button {
+	background: rgb(9, 62, 41);
+	border-radius: 1.4rem;
+	border:0.1rem solid rgb(108, 183, 51);
+	color: rgb(173, 173, 173);
+	transition:0.4s;
+	box-shadow: rgba(2, 255, 14, 0.7) 0px 25px 20px -20px;}
+
+.demo-2b .dl-menuwrapper button:hover,
+.demo-2b .dl-menuwrapper button.dl-active,
+.demo-2b .dl-menuwrapper ul {
+	background: rgb(34, 142, 97);
+	border-radius: 1rem;
+	border:0.1rem solid rgb(81, 255, 0);
+	color: rgb(255, 255, 255);
+	transition:0.4s;
+	box-shadow: rgba(0, 204, 65, 0.3) 0px 25px 20px -20px;}
