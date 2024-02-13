@@ -91,7 +91,7 @@
 	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> Leave <b style="color: white;">blank</b> what you don't know</p>
 	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> Put 0 if you got 0</p>
 	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> Use . not ,</p>
-	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> If you are currently taking an English course, please click on the appropriate flag icon.</p>
+	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> If you are currently taking a French-only course, please click on the appropriate flag icon. </p>
 	<div class="container demo-2a">	
 		<div class="main clearfix">
 		  <div class="column">
@@ -176,13 +176,13 @@
   </section>
 
   <div class="image-container">
-	<img src="https://i.redd.it/hcziedb8jeq71.png" alt="Image 1">
-	<a href = "/gPAC/gpameter/licence2/s2/eng/ge.html">
+	<a href="/gPAC/gpameter/licence2/s2/ge.html"><img src="https://i.redd.it/hcziedb8jeq71.png" alt="Image 1"></a>
 	<img src="
-	https://www.crwflags.com/fotw/images/g/gb_nwg.gif	"
+	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png
+	"
 	alt="Image 2"
-	style="opacity: 0.4;"
-	></a>
+	style="opacity: 1;"
+	>
   </div>
   
 
@@ -424,7 +424,7 @@
 					
 					<fieldset style="background-color: rgba(0, 255, 255, 0.289);margin-left: 10px;margin-right: 10px;">
 						<legend>
-					<span style="display: inline-block; vertical-align: middle;"> FRENCH - 2</span>
+					<span style="display: inline-block; vertical-align: middle;"> FRENCH - 1</span>
 					<img src="
 					https://cdn-icons-png.flaticon.com/128/317/317182.png
 					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
@@ -432,16 +432,16 @@
 				</legend>
 				<div class="elements">
 				<div class="element"><label for="fr-cc1">MID</label>
-				<input type="text" id="fr-cc1" name="fr-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
+				<input type="text" id="fr-cc1" name="fr-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.25</h1></div>
 
 				<div class="element"><label for="fr-cc2">ORAL</label>
-				<input type="text" id="fr-cc2" name="fr-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
+				<input type="text" id="fr-cc2" name="fr-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.25</h1></div>
 
 				<div class="element"><label for="fr-cc3">FINAL</label>
-				<input type="text" id="fr-cc3" name="fr-cc3" min="0" max="20" oninput="calculateGPA()"><h1>1</h1></div>
+				<input type="text" id="fr-cc3" name="fr-cc3" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
 				</div>
 			</fieldset><br>
-<!--
+
 			<fieldset style="background-color: rgba(0, 255, 255, 0.289);margin-left: 10px;margin-right: 10px;">
 				<legend>
 					<span style="display: inline-block; vertical-align: middle;"> ENGLISH - 1</span>
@@ -461,7 +461,6 @@
 				<input type="text" id="en-cc3" name="en-cc3" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
 				</div>
 			</fieldset><br>
--->
 
 			</fieldset>
 
@@ -594,6 +593,13 @@
 						<span id="fr"></span>
 						<span>  </span>
 						<span id="frp"></span>
+						<span >%</span>
+					</h1>
+					<h1>
+						ENGLISH : 
+						<span id="en"></span>
+						<span>  </span>
+						<span id="enp"></span>
 						<span >%</span>
 					</h1>
 				</div>

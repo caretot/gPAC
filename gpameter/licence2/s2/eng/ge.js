@@ -30,11 +30,10 @@ function calculateGPA() {
    let frCC1 = parseFloat(document.getElementById("fr-cc1").value);
    let frCC2 = parseFloat(document.getElementById("fr-cc2").value);
    let frCC3 = parseFloat(document.getElementById("fr-cc3").value);
-/*
+
    let enCC1 = parseFloat(document.getElementById("en-cc1").value);
    let enCC2 = parseFloat(document.getElementById("en-cc2").value);
    let enCC3 = parseFloat(document.getElementById("en-cc3").value);
-*/
 
 
 
@@ -58,6 +57,7 @@ function calculateGPA() {
      softCC1, softCC2,softCC3,
      ledCC1, ledCC2,ledCC3,
      frCC1, frCC2, frCC3,
+     enCC1, enCC2, enCC3,
    ];
 
    const coefs = [
@@ -69,7 +69,8 @@ function calculateGPA() {
      4/3, 4/3,    /* seism  + well                                                   */
      2/3, 2/3, 2/3,   /* soft                                                     */
      0.4, 0.8, 0.8,    /* led                                                   */
-     0.5, 0.5, 1,    /* fr                                               */
+     0.25, 0.25, 0.5,    /* fr                                               */
+     0.25, 0.25, 0.5,    /* en                                               */
    ];
 
 
@@ -190,7 +191,16 @@ if (isNaN(frCC3)) {
    frCC3 = 0;
 }
 
-
+// Initialize enCC1, enCC2, enCC3
+if (isNaN(enCC1)) {
+   enCC1 = 0;
+}
+if (isNaN(enCC2)) {
+   enCC2 = 0;
+}
+if (isNaN(enCC3)) {
+   enCC3 = 0;
+}
 
 
 
@@ -246,13 +256,14 @@ if (isNaN(frCC3)) {
    
    let ledGPA = ((ledCC1 * 0.4) + (ledCC2 * 0.8) + (ledCC3 * 0.8)) / (0.4 + 0.8 + 0.8);
    
-   let frGPA = ((frCC1 * 0.5) + (frCC2 * 0.5) + (frCC3 * 1)) / (0.5 + 0.5 + 1);
+   let frGPA = ((frCC1 * 0.25) + (frCC2 * 0.25) + (frCC3 * 0.5)) / (0.25 + 0.25 + 0.5);
+   let enGPA = ((enCC1 * 0.25) + (enCC2 * 0.25) + (enCC3 * 0.5)) / (0.25 + 0.25 + 0.5);
    
 
 
    let phyGPA = ((fluidGPA) + (electronicsGPA) + (phylabGPA*2))/4;
    let geophyGPA = (signalGPA+seismGPA+wellGPA)/3
-   let langGPA = frGPA;
+   let langGPA = (frGPA/2+enGPA/2);
 
 
 
@@ -438,6 +449,9 @@ if (((softGPA + ledGPA)/2) >= 16) {
    document.getElementById("fr").innerHTML = frGPA.toFixed(2);
    document.getElementById("frp").innerHTML = (frGPA/0.2).toFixed(1);
 
+   document.getElementById("en").innerHTML = enGPA.toFixed(2);
+   document.getElementById("enp").innerHTML = (enGPA/0.2).toFixed(1);
+
 
    
    document.getElementById("math2").innerHTML = mathGPA.toFixed(2);
@@ -467,7 +481,7 @@ if (((softGPA + ledGPA)/2) >= 16) {
    document.getElementById("advicephy").innerHTML = advicephy;
    document.getElementById("advicefac").innerHTML = advicefac;
    document.getElementById("advicesocial").innerHTML = advicesocial;
-   document.getElementById("advicelang").innerHTML = advicelang   ;
+   document.getElementById("advicelang").innerHTML = advicelang;
    
 
 
