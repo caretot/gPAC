@@ -431,6 +431,9 @@ if (((softGPA + ledGPA)/2) >= 16) {
    document.getElementById("well").innerHTML = wellGPA.toFixed(2);
    document.getElementById("wellp").innerHTML = (wellGPA/0.2).toFixed(1);
 
+   document.getElementById("led").innerHTML = ledGPA.toFixed(2);
+   document.getElementById("ledp").innerHTML = (ledGPA/0.2).toFixed(1);
+
    document.getElementById("soft").innerHTML = softGPA.toFixed(2);
    document.getElementById("softp").innerHTML = (softGPA/0.2).toFixed(1);
 
