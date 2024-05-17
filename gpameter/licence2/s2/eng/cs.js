@@ -54,6 +54,7 @@ function calculateGPA() {
      softCC1, softCC2,softCC3,
      ledCC1, ledCC2,ledCC3,
      frCC1, frCC2, frCC3,
+     enCC1, enCC2, enCC3,
    ];
 
    const coefs = [
@@ -65,7 +66,8 @@ function calculateGPA() {
      1, 1,     /* ai                                                   */
      2/3, 2/3, 2/3,   /* soft                                                     */
      0.4, 0.8, 0.8,    /* led                                                   */
-     0.5, 0.5, 1,    /* fr                                               */
+     0.25, 0.25, 0.5,    /* fr                                               */
+     0.25, 0.25, 0.5,    /* en                                               */
    ];
 
 
