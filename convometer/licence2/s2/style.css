@@ -1,0 +1,141 @@
+/* General CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 400px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #004187;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #027e21;
+}
+
+#gradesOutput {
+  width: 100%;
+  text-align: center;
+}
+
+/* Table CSS */
+.table-container {
+  display: inline-block;
+  margin: 0 auto;
+}
+.table1-up {
+  margin: 0 auto;
+  display:table;
+}
+#idOutput table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  display: table;
+  margin: 0px;
+}
+
+.nametoid{
+  background-color: rgb(49, 137, 172);
+}
+
+
+
+
+
+.name{
+  color: rgba(53, 53, 53, 0.774);
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+  background-color: #e9ecef;
+}
+
+/* Responsive CSS */
+@media (max-width: 600px) {
+  input, button {
+      width: 90%;
+  }
+
+  table, th, td {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+/* Existing CSS remains unchanged */
+
+/* Add margin between table containers for web */
+@media (min-width: 601px) {
+  .table2Container {
+      margin-left: 200px; 
+  }
+}
