@@ -834,3 +834,24 @@ All this is done for any sub-level being entered.
 	color: rgb(255, 255, 255);
 	transition:0.4s;
 	box-shadow: rgba(0, 204, 65, 0.3) 0px 25px 20px -20px;}
+
+
+	
+/* Demo 2c */
+.demo-2c .dl-menuwrapper button {
+	background: rgb(47, 0, 0);
+	border-radius: 1.4rem;
+	border:0.1rem solid rgb(255, 95, 95);
+	color: rgb(173, 173, 173);
+	transition:0.4s;
+	box-shadow: rgba(255, 2, 2, 0.7) 0px 25px 20px -20px;}
+
+.demo-2c .dl-menuwrapper button:hover,
+.demo-2c .dl-menuwrapper button.dl-active,
+.demo-2c .dl-menuwrapper ul {
+	background: rgb(142, 34, 34);
+	border-radius: 1rem;
+	border:0.1rem solid rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+	transition:0.4s;
+	box-shadow: rgba(204, 0, 0, 0.3) 0px 25px 20px -20px;}
