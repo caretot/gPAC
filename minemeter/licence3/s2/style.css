@@ -1,0 +1,199 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .student-info-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Input and Button Styling */
+  label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  #studentId {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .minebutton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .minebutton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95em;
+  }
+  
+  table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  th {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  td {
+    color: #333;
+  }
+  
+  /* Responsive Table Styling */
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      margin: 0 0 10px;
+    }
+  
+    td {
+      position: relative;
+      padding: 12px;
+      text-align: left;
+      white-space: normal; /* Allow text to wrap for better readability on small screens */
+      word-wrap: break-word;
+      border: none; /* Remove border to create a cleaner stack view */
+      border-bottom: 1px solid #ddd;
+    }
+  
+    /* Make the header label appear above the cell content */
+    td:before {
+      content: attr(data-label);
+      display: block;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 5px;
+    }
+  }
+  
+  /* △ Rank Color Coding */
+  td.positive {
+    color: green;
+  }
+  
+  td.negative {
+    color: red;
+  }
+  
+  td.zero {
+    color: #333;
+  }
+  /*button contact*/
+
+
+/* CSS */
+.button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 22px;
+    transition: 1s;
+    text-shadow: 0px 1.5px rgb(0, 170, 222);
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+    transition: 1s;
+    text-shadow: 0px 2px rgb(0, 135, 177);
+  }
+  
+  .button-64 span {
+    background-color: rgb(5, 6, 45);
+    text-shadow: 0px 1.5px rgb(0, 135, 177);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+  }
+  
+  .button-64:hover span {
+    background: none;
+    text-shadow: 0px 2px rgb(0, 93, 121);
+    transition: 1s;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 1.2rem;
+      min-width: 196px;
+    transition: 1s;
+  }
+  }
