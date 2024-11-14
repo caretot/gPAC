@@ -23,7 +23,7 @@
   <script src="/gPAC/js2/modernizr.custom.js"></script>
   <link rel="stylesheet" href="/gPAC/santa css/style.css">
   <script src="https://apis.google.com/js/api.js"></script>
-  <script src="/gPAC/minemeter/licence3/s2/script.js"></script> <!-- Link to your external JS file -->
+  <script src="/gPAC/minemeter/licence3/s1/cs/script.js"></script> <!-- Link to your external JS file -->
 
 
 </head>
@@ -98,7 +98,7 @@
     
         
         <section class="section1">
-            <h2><a href="/gPAC/minemeter/minemeter.html" style="color: rgb(207, 179, 0);font-size: 200%;">·</a><a style="color: white;" href="/gPAC/minemeter/minemeter.html"> L3S1 GE</a></h2>
+            <h2><a href="/gPAC/minemeter/minemeter.html" style="color: rgb(207, 179, 0);font-size: 200%;">·</a><a style="color: white;" href="/gPAC/minemeter/minemeter.html"> L3S1 CS</a></h2>
             <div class="container demo-2c">	
               <div class="main clearfix">
                 <div class="column">
@@ -182,14 +182,14 @@
 
             <br><br>
             <div class="responsive-container-block">
-              <a href="/gPAC/rankometer/licence2/s1/all21l2s1.html">
+              <a href="/gPAC/rankometer/licence3/s1/all21l2s1.html">
                 <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
                   <div class="team-card">
                     <div class="img-wrapper">
-                        <p class="whatyouneed" id="maxgpage"></p>
+                        <p class="whatyouneed" id="maxgpacs"></p>
                     </div>
                     <p class="text-blk name" style="color: aquamarine;">
-                      Max GPA <br>GE
+                      Max GPA <br>CS
                     </p>
                   </div>
                 </div>
@@ -253,12 +253,12 @@
   
   // Mapping of element IDs to Google Sheets cell references
   const cellMappings = {
-    maxgpage: 'GE!D97',   // Max GPA (GE)
-    date: 'GE!E97',       // Last Modified Date
-    examrank: 'GE!F97',   // Exam Rank
-    cgpaaver: 'GE!D99',   // CGPA Average
-    gpaaver: 'GE!E99',    // GPA Average
-    percaver: 'GE!F99'    // Percentage Average
+    maxgpacs: 'CS!D161',   // Max GPA (CS)
+    date: 'CS!E161',       // Last Modified Date
+    examrank: 'CS!F161',   // Exam Rank
+    cgpaaver: 'CS!D163',   // CGPA Average
+    gpaaver: 'CS!E163',    // GPA Average
+    percaver: 'CS!F163'    // Percentage Average
   };
 
   // Function to fetch and display data
@@ -382,11 +382,8 @@
               <table id="academicScoresTable">
                 <thead>
                   <tr>
-                    <th>Math</th>
-                    <th>Physics</th>
-                    <th>Geophysics 2a</th>
-                    <th>Geophysics 2b</th>
-                    <th>Geology</th>
+                    <th>CS 5a</th>
+                    <th>CS 5b</th>
                     <th>Language</th>
                     <th>Professional Preparation</th>
                   </tr>
@@ -399,16 +396,12 @@
               <table id="specializedSubjectsTable">
                 <thead>
                   <tr>
-                    <th>ODE PDE</th>
-                    <th>Fluid</th>
-                    <th>Earth Rheology</th>
-                    <th>Inverse Methods</th>
-                    <th>Remote Sensing</th>
-                    <th>Seismic</th>
-                    <th>Near Surface GP</th>
-                    <th>GP Fieldwork</th>
-                    <th>Geology AZ</th>
-                    <th>Petrel</th>
+                    <th>Parallel PRG</th>
+                    <th>Cloud</th>
+                    <th>Software</th>
+                    <th>OSA</th>
+                    <th>Mobile App</th>
+                    <th>Prob, Stats</th>
                     <th>French</th>
                     <th>Academic Writing</th>
                   </tr>

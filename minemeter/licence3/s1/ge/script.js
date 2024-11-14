@@ -1,3 +1,6 @@
+// Your API key and Sheet ID
+const SHEET_ID = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
+const API_KEY = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
 
 
 async function fetchStudentData() {
@@ -17,8 +20,7 @@ async function fetchStudentData() {
     const studentRow = rows.find(row => row[1] === studentId);
 
     if (studentRow) {
-      const studentDetails = document.getElementById("studentDetails");
-      studentDetails.style.display = "block";
+      document.getElementById("studentDetails").style.display = "block";
 
       const generalInfoTable = document.querySelector("#generalInfoTable tbody");
       const academicScoresTable = document.querySelector("#academicScoresTable tbody");
@@ -72,6 +74,7 @@ async function fetchStudentData() {
     console.error("Error fetching student data:", error);
   }
 }
+
 
 
 

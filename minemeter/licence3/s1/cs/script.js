@@ -1,3 +1,7 @@
+// Your API key and Sheet ID
+const SHEET_ID = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
+const API_KEY = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
+
 
 
 async function fetchStudentData() {
@@ -8,7 +12,7 @@ async function fetchStudentData() {
   }
 
   try {
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/GE!AU6:BU32?key=${API_KEY}`;
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/CS!AQ6:BJ49?key=${API_KEY}`;
     const response = await fetch(url);
     const data = await response.json();
     const rows = data.values;
@@ -41,7 +45,7 @@ async function fetchStudentData() {
 
       // Populate Academic Scores table
       const academicScoresRow = document.createElement('tr');
-      studentRow.slice(8, 15).forEach((cell, index) => {
+      studentRow.slice(8, 12).forEach((cell, index) => {
         const td = document.createElement('td');
         td.setAttribute('data-label', headerRow[index + 8]);
         td.textContent = cell;
@@ -51,7 +55,7 @@ async function fetchStudentData() {
 
       // Populate Specialized Subjects table
       const specializedSubjectsRow = document.createElement('tr');
-      studentRow.slice(15).forEach((cell, index) => {
+      studentRow.slice(12).forEach((cell, index) => {
         const td = document.createElement('td');
         td.setAttribute('data-label', headerRow[index + 15]);
         td.textContent = cell;
@@ -59,6 +63,7 @@ async function fetchStudentData() {
       });
       specializedSubjectsTable.appendChild(specializedSubjectsRow);
 
+      
       // Color coding for the △ Rank column
       const deltaRankCell = generalInfoRow.lastElementChild;
       const deltaRankValue = parseInt(deltaRankCell.textContent, 10);
