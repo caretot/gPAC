@@ -95,7 +95,6 @@
     
     
     
-    
         
         <section class="section1">
             <h2><a href="/gPAC/minemeter/minemeter.html" style="color: rgb(207, 179, 0);font-size: 200%;">·</a><a style="color: white;" href="/gPAC/minemeter/minemeter.html"> L3S1 CE</a></h2>
@@ -182,7 +181,7 @@
 
             <br><br>
             <div class="responsive-container-block">
-              <a href="/gPAC/rankometer/licence3/s1/all21l2s1.html">
+              <a href="/gPAC/rankometer/licence3/s1/ce21l3s1.html">
                 <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
                   <div class="team-card">
                     <div class="img-wrapper">
@@ -307,6 +306,38 @@
         
         
         <div class="student-info-page">
+          <div class="container123">
+            <label for="container123">Name to ID</label>
+            <div class="search-container">
+              <div class="search-wrapper">
+                <input type="text" id="search-box" placeholder="Name, ID, Faculty" autocomplete="off"/>
+                <button id="clear-button123" class="clear-button123">&times;</button>
+              </div>
+              <div id="results">
+                <table class="animated-table specific-table">
+                  <thead id="table-header">
+                    <tr>
+                      <th>ID</th>
+                      <th>FAC</th>
+                      <th>NAME</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-body">
+                    <!-- Rows will be added dynamically -->
+                  </tbody>
+                </table>
+                <div id="no-results" style="display: none;font-size: large;">No results found</div>
+              </div>
+            </div>
+          </div>
+          <script src="/gPAC/minemeter/licence3/s1/all/all.js"></script>
+          <link rel="stylesheet" href="/gPAC/minemeter/licence3/s1/all/all.css">
+        
+      
+      
+
+
+
             <!-- Input for Student ID -->
             <label for="studentId">Enter Student ID:</label>
             <input type="number" id="studentId" placeholder="221222XX" inputmode="numeric"><br>
@@ -398,7 +429,7 @@
                   <tr>
                     <th>ODE PDE</th>
                     <th>Polymers</th>
-                    <th>Analytical CH</th>
+                    <th>Analytical CHss</th>
                     <th>Exp CH</th>
                     <th>Applied CH</th>
                     <th>Systems</th>

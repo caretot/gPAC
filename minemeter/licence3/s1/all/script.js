@@ -57,7 +57,7 @@ async function fetchStudentData() {
       const specializedSubjectsRow = document.createElement('tr');
       studentRow.slice(13).forEach((cell, index) => {
         const td = document.createElement('td');
-        td.setAttribute('data-label', headerRow[index + 13]);
+        td.setAttribute('data-label', headerRow[index + 15]);
         td.textContent = cell;
         specializedSubjectsRow.appendChild(td);
       });

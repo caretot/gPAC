@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Search</title>
+  <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div class="container123">
+        <h1>Google Sheets Search</h1>
+        <div class="search-container">
+          <input type="text" id="search-box" placeholder="Type to search..." />
+          <button id="clear-button">Clear</button>
+        </div>
+        <div id="results">
+          <table class="animated-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>FAC</th>
+                <th>NAME</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <!-- Rows will be added dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+  <script src="script.js"></script>
+  <script src="all.js"></script>
+</body>
+</html>
