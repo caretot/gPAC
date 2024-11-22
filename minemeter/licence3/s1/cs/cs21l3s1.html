@@ -248,8 +248,8 @@
             <script>
               
   // Google Sheets configuration
-  const sheetId = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
-  const apiKey = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
+  const SHEET_ID = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
+  const API_KEY = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
   
   // Mapping of element IDs to Google Sheets cell references
   const cellMappings = {
@@ -264,7 +264,7 @@
   // Function to fetch and display data
   function fetchData() {
     Object.entries(cellMappings).forEach(([elementId, cellRange]) => {
-      const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${cellRange}?key=${apiKey}`;
+      const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${cellRange}?key=${API_KEY}`;
       
       const element = document.getElementById(elementId);
       element.style.opacity = 0; // Hide the element initially
@@ -441,17 +441,26 @@
                 <tbody></tbody>
               </table>
 
-            </div>
+              <!-- Pie Chart Canvas -->
 
-  <!-- Pie Chart Canvas -->
+            <script src="script.js"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+            <h2>Student CGPA Chart</h2><center>
+            <div id="myChart" class="piechart123"></div>  <!-- Plotly renders inside a div -->
+          </center>
+
 
           </div>
-        <script src="script.js"></script>
-        
+
+
+        </div>
+      <script src="script.js"></script>
+      
 
 
 
-      <footer class="footer">
+    <footer class="footer">
         <ul class="social-icon">
           <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/fuad.ildarov.3">
               <ion-icon name="logo-facebook"></ion-icon>

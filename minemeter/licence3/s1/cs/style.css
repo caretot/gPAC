@@ -160,7 +160,17 @@ table th, table td {
 /* Responsive Table Styling */
 @media screen and (max-width: 600px) {
   .student-info-page {
-    max-width: 340px;}
+    max-width: 340px;  /* Maximum width of the parent div */
+    width: 100%;       /* Ensure the parent div takes up 100% of available space (within max-width) */
+    overflow: hidden;  /* Prevent any child elements from overflowing */
+    box-sizing: border-box;  /* Include padding and border in the width calculation */
+}
+
+.student-info-page * {
+    max-width: 100%;  /* Ensure no child element exceeds the width of the parent */
+    overflow: hidden;  /* Prevent any overflow within the child elements */
+    box-sizing: border-box;  /* Include padding and border in the width calculation */
+}
   table, thead, tbody, th, td, tr {
     display: block;
   }
