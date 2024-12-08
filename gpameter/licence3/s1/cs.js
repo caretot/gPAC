@@ -61,7 +61,7 @@ function calculateGPA() {
       10/9*3/2, 10/9*3/2,
       10/9*3/2, 10/9*3/2,
 
-      2*5/7*20/30*3/2, 2*5/7*20/30*3/2, (10/3-(4*5/7*20/30)*3/2),
+      2*5/7*20/30*3/2*3/2, 2*5/7*20/30*3/2*3/2, (10/3-(4*5/7*20/30)*3/2)*3/2,
       1.6*2/3*3/2, 2.4*2/3*3/2, 
       4/3*3/2,2*3/2,
 
@@ -69,24 +69,6 @@ function calculateGPA() {
 
       2/3*3/2,2/3*3/2,2/3*3/2
    ];
-
-
-
-
-
-   for (let i = 0; i < midterms.length; i++) {
-      if(parseFloat(midterms[i])>-1){
-         currentcoef = currentcoef + parseFloat(coefs[i]);
-         currenttotalgrades =currenttotalgrades+ parseFloat(midterms[i])*parseFloat(coefs[i]);
-      }
-    };
-    if(currentcoef==0){
-     currentgpa = 0
-    }else{
-     currentgpa = (currenttotalgrades) / (currentcoef) ;
-
-    }
-    currentgpa = currentgpa/0.2;
 
 
 
@@ -164,6 +146,24 @@ function calculateGPA() {
 
 
 
+   for (let i = 0; i < midterms.length; i++) {
+      if(parseFloat(midterms[i])>-1){
+         currentcoef = currentcoef + parseFloat(coefs[i]);
+         currenttotalgrades =currenttotalgrades+ parseFloat(midterms[i])*parseFloat(coefs[i]);
+      }
+    };
+    if(currentcoef==0){
+     currentgpa = 0
+    }else{
+     currentgpa = (currenttotalgrades) / (currentcoef) ;
+
+    }
+    currentgpa = currentgpa/0.2;
+
+
+
+
+
 
 
 
@@ -191,7 +191,7 @@ function calculateGPA() {
   let advicecs5a = "";
   let advicecs5b = "";
   let advicelang = "";
-  let adviceacadwr = "";
+  let adviceprofprep = "";
 
    // Calculate the GPA
    let totalCredits = 30; // Total credits of all courses
@@ -306,17 +306,18 @@ function calculateGPA() {
  }
 
  
- if (profprepGPA >= 16){
-  adviceprofprep = "Your physics proficiency is exceptional! Consider diving into advanced topics or engaging in independent research to further elevate your understanding and expertise in the field.";
-} else if (profprepGPA <= 15.9999 && profprepGPA >= 13.5) {
-  adviceprofprep = "Great job on maintaining a high physics GPA! Challenge yourself with complex problems, seek out additional resources, and explore hands-on experiments to deepen your practical skills.";
-} else if (profprepGPA <= 13.4999999 && profprepGPA >= 11.5) {
-  adviceprofprep = "You're progressing well in physics. Ensure consistent practice, apply theoretical concepts in practical scenarios, and consider collaborative projects to enhance your understanding of challenging topics.";
-} else if (profprepGPA <= 11.4999999 && profprepGPA >= 10) {
-  adviceprofprep = "You're on the right path in physics. Strengthen your foundation by focusing on core principles, seek guidance from professors, and explore real-world applications through simulations or experiments.";
-} else {
-  adviceprofprep = "If your physics GPA is lower, don't be discouraged. Identify areas for improvement, dedicate extra time to problem-solving, and seek support from tutors or online resources to progressively enhance your physics skills.";
-}
+ if (profprepGPA >= 16) {
+   adviceprofprep = "Your academic writing skills are outstanding! Your ability to construct coherent arguments and present ideas effectively is commendable. Consider engaging in advanced writing workshops or contributing to academic publications to refine your expertise.";
+ } else if (profprepGPA <= 15.9999 && profprepGPA >= 13.5) {
+   adviceprofprep = "Great work in academic writing! You have a strong foundation. Continue practicing by writing essays or articles on diverse topics to expand your skills and develop a unique voice.";
+ } else if (profprepGPA <= 13.4999 && profprepGPA >= 11.5) {
+   adviceprofprep = "You’re making good progress in academic writing. Focus on structuring your essays clearly, enhancing your vocabulary, and refining your critical analysis skills through regular practice.";
+ } else if (profprepGPA <= 11.4999 && profprepGPA >= 10) {
+   adviceprofprep = "You’re on the right track in academic writing. Work on organizing your ideas more effectively, seek feedback from peers or instructors, and review grammar and style guidelines for polished work.";
+ } else {
+   adviceprofprep = "Academic writing can be challenging, but with consistent effort, you can improve. Start with outlining your ideas, practice regularly, and use feedback to refine your writing. Don't hesitate to seek guidance or resources to strengthen your skills.";
+ }
+ 
 
 
 

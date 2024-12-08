@@ -185,6 +185,8 @@ font-size: 1.5rem;
 
 
 
+
+
 @media screen and (min-width:800px) {
   #calculation,#resultation { 
     flex: 1;
@@ -241,3 +243,41 @@ font-size: 1.5rem;
   
   }
       
+
+
+
+
+  #dl-menu1{
+    z-index: 10;
+  }
+  .rahatciliq {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+  
+  .icon {
+    height: 70px;
+    width: 70px;
+    opacity: 50%;
+    margin: 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Remove grayscale and adjust opacity for the last icon */
+  .rahatciliq a:last-child .icon {
+    filter: grayscale(0%);
+    opacity: 100%;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .icon {
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+    }
+  }

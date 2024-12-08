@@ -169,7 +169,25 @@
 			</div><!-- /dl-menuwrapper -->
 		  </div>
 		</div>
-	  </div><!-- /container -->
+	  </div><!-- /container --><br>
+	  <div style="display: flex; justify-content: center; flex-wrap: wrap;" class="rahatciliq">
+		<a href="/gPAC/gpameter/licence3/s1/ge.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/13628/13628415.png" alt="" class="icon">
+		</a>
+		<a href="/gPAC/gpameter/licence3/s1/pe.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/8044/8044304.png" alt="" class="icon">
+		</a>
+		<a href="/gPAC/gpameter/licence3/s1/ce.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/10296/10296400.png" alt="" class="icon">
+		</a>
+		<a href="/gPAC/gpameter/licence3/s1/cs.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" class="icon">
+		</a>
+	  </div>
+	  
+	  
+	  
+  
 
   </section>
 
@@ -644,27 +662,28 @@
 						function drawChart() {
 						  // Set Data
 						  const data = google.visualization.arrayToDataTable([
-							['Activity', 'Value', { role: 'annotation' }, { role: 'style' }],
-							['PROB, STATS FINAL', 2, 'PROB, STATS FINAL', 'color: #800080'],  // Dark Purple
-							['MOBILE EXAM', 1.6, 'MOBILE EXAM', 'color: #DDA0DD'],  // Light Purple
-							['OSA FINAL', 1.43, 'OSA FINAL', 'color: #800080'],  // Dark Purple
-							['PROB, STATS MID', 1.33, 'PROB, STATS MID', 'color: #DDA0DD'],  // Light Purple
-							['PARALEL PW', 1.11, 'PARALEL PW', 'color: #800080'],  // Dark Purple
-							['PARALEL EXAM', 1.11, 'PARALEL EXAM', 'color: #DDA0DD'],  // Light Purple
-							['CLOUD PW', 1.11, 'CLOUD PW', 'color: #800080'],  // Dark Purple
-							['CLOUD EXAM', 1.11, 'CLOUD EXAM', 'color: #DDA0DD'],  // Light Purple
-							['SOFTWARE PW', 1.11, 'SOFTWARE PW', 'color: #800080'],  // Dark Purple
-							['SOFTWARE EXAM', 1.11, 'SOFTWARE EXAM', 'color: #DDA0DD'],  // Light Purple
-							['MOBILE PW', 1.07, 'MOBILE PW', 'color: #800080'],  // Dark Purple
-							['OSA PW', 0.95, 'OSA PW', 'color: #DDA0DD'],  // Light Purple
-							['OSA MID', 0.95, 'OSA MID', 'color: #800080'],  // Dark Purple
-							['FRENCH ORAL', 0.75, 'FR ORAL', 'color: #DDA0DD'],  // Light Purple
-							['FRENCH FINAL', 0.75, 'FR FINAL', 'color: #800080'],  // Dark Purple
-							['ACAD WRITING MID', 0.67, 'AC WR MID', 'color: #DDA0DD'],  // Light Purple
-							['ACAD WRITING MID2', 0.67, 'AC WR MID2', 'color: #800080'],  // Dark Purple
-							['ACAD WRITING FINAL', 0.67, 'AC WR FINAL', 'color: #DDA0DD'],  // Light Purple
-							['FRENCH MID', 0.5, 'FR MID', 'color: #800080']  // Dark Purple
-						  ]);
+  ['Activity', 'Value', { role: 'annotation' }, { role: 'style' }],
+  ['PROB, STATS FINAL', 2, 'PROB, STATS FINAL', 'color: #2d1047'],  // Dark Purple
+  ['MOBILE EXAM', 1.6, 'MOBILE EXAM', 'color: #8A2BE2'],  // Light Purple
+  ['OSA FINAL', 1.43, 'OSA FINAL', 'color: #DDA0DD'],  // Light Purple
+  ['PROB, STATS MID', 1.33, 'PROB, STATS MID', 'color: #2d1047'],  // Dark Purple
+  ['PARALEL PW', 1.11, 'PARALEL PW', 'color: #800000'],  // Brown
+  ['PARALEL EXAM', 1.11, 'PARALEL EXAM', 'color: #800000'],  // Brown
+  ['CLOUD PW', 1.11, 'CLOUD PW', 'color: #c73030'],  // Forest Green
+  ['CLOUD EXAM', 1.11, 'CLOUD EXAM', 'color: #c73030'],  // Forest Green
+  ['SOFTWARE PW', 1.11, 'SOFTWARE PW', 'color: #fa6b6b'],  // Gold
+  ['SOFTWARE EXAM', 1.11, 'SOFTWARE EXAM', 'color: #fa6b6b'],  // Gold
+  ['MOBILE PW', 1.07, 'MOBILE PW', 'color: #8A2BE2'],  // BlueViolet
+  ['OSA PW', 0.95, 'OSA PW', 'color: #DDA0DD'],  // Light Purple
+  ['OSA MID', 0.95, 'OSA MID', 'color: #DDA0DD'],  // Light Purple
+  ['FRENCH ORAL', 0.75, 'FR ORAL', 'color: #007011'],  // Tomato
+  ['FRENCH FINAL', 0.75, 'FR FINAL', 'color: #007011'],  // Tomato
+  ['ACAD WRITING MID', 0.67, 'AC WR MID', 'color: #0000FF'],  // Blue
+  ['ACAD WRITING MID2', 0.67, 'AC WR MID2', 'color: #0000FF'],  // Blue
+  ['ACAD WRITING FINAL', 0.67, 'AC WR FINAL', 'color: #0000FF'],  // Blue
+  ['FRENCH MID', 0.5, 'FR MID', 'color: #007011']  // Tomato
+]);
+
 					  
 						  // Set Options
 						  const options = {
