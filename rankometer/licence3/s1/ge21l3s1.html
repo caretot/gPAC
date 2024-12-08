@@ -288,15 +288,56 @@
               <button class="button-64" role="button"><span class="text">
                 <i class='far'>&#xf044;</i> Report issue</span></button>
             </a><br><br><br><br>
-            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-
-              <a href="/gPAC/rankometer/licence3/s1/ce21l3s1.html"><img src="https://cdn-icons-png.flaticon.com/128/10296/10296400.png" alt="" style="height: 70px;width: 70px;opacity: 50%;margin: 20px; filter: grayscale(100%);"></a>
-              <a href="/gPAC/rankometer/licence3/s1/cs21l3s1.html"><img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" style="height: 70px;width: 70px;opacity: 50%;margin: 20px; filter: grayscale(100%);"></a>
-              <a href="/gPAC/rankometer/licence3/s1/pe21l3s1.html"><img src="https://cdn-icons-png.flaticon.com/128/8044/8044304.png" alt="" style="height: 70px;width: 70px;opacity: 50%;margin: 20px; filter: grayscale(100%);"></a>
-              <a href="/gPAC/rankometer/licence3/s1/all21l3s1.html"><img src="https://cdn-icons-png.flaticon.com/128/5559/5559310.png" alt="" style="height: 70px;width: 70px;opacity: 50%;margin: 20px; filter: grayscale(100%);"></a>
-              <a href="/gPAC/rankometer/licence3/s1/ge21l3s1.html"><img src="https://cdn-icons-png.flaticon.com/128/13628/13628415.png" alt="" style="height: 70px;width: 70px;opacity: 100%;margin: 20px; filter: grayscale(0%);"></a>
-
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;" class="rahatciliq">
+              <a href="/gPAC/rankometer/licence3/s1/cs21l3s1.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" class="icon">
+              </a>
+              <a href="/gPAC/rankometer/licence3/s1/pe21l3s1.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/8044/8044304.png" alt="" class="icon">
+              </a>
+              <a href="/gPAC/rankometer/licence3/s1/all21l3s1.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/5559/5559310.png" alt="" class="icon">
+              </a>
+              <a href="/gPAC/rankometer/licence3/s1/ce21l3s1.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/10296/10296400.png" alt="" class="icon">
+              </a>
+              <a href="/gPAC/rankometer/licence3/s1/ge21l3s1.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/13628/13628415.png" alt="" class="icon">
+              </a>
             </div>
+            
+            <style>
+              .rahatciliq {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+              }
+            
+              .icon {
+                height: 70px;
+                width: 70px;
+                opacity: 50%;
+                margin: 20px;
+                filter: grayscale(100%);
+                transition: filter 0.3s ease, opacity 0.3s ease;
+              }
+            
+              /* Remove grayscale and adjust opacity for the last icon */
+              .rahatciliq a:last-child .icon {
+                filter: grayscale(0%);
+                opacity: 100%;
+              }
+            
+              /* Mobile adjustments */
+              @media (max-width: 768px) {
+                .icon {
+                  height: 35px;
+                  width: 35px;
+                  margin: 10px;
+                }
+              }
+            </style>
+            
         </section>
 <br><br><br><hr><br><br><br>
         <div class="searchdiv">
