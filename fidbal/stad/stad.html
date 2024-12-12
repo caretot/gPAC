@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadium Comparison</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 1rem;
+            padding: 0;
+            background-color: #0B0B0B;
+            color: #6594C0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #0E1E5B;
+            box-shadow: 0 4px 20px rgb(14, 107, 255);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #6594C0;
+            margin-bottom: 20px;
+        }
+        .stadium {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            border-bottom: 2px dashed #ffffff;
+            padding-bottom: 20px;
+        }
+        .stadium:last-child {
+            border-bottom: none;
+        }
+        .stadium .info {
+            flex: 1;
+            padding: 10px;
+        }
+        .stadium .visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stadium .visual div {
+    background-color: #00af03;
+    background-image: url('https://img.freepik.com/premium-vector/soccer-stadium-top-view-layout-vector-illustration_261737-541.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+        .stadium1 .visual div {
+            width: 176.2px;
+            height: 120.8px;
+        }
+        .stadium1 {
+    color: rgb(0, 250, 13);
+    animation: blinkColor 0.8s infinite alternate;
+}
+
+@keyframes blinkColor {
+    0% {
+        color: rgb(0, 214, 11); /* Green */
+    }
+    100% {
+        color: rgb(14, 148, 30); /* Light blue */
+    }
+}
+
+        .stadium2 .visual div {
+            width: 74.6px;
+            height: 44.4px;
+        }
+        .stadium3 .visual div {
+            width: 210px;
+            height: 136px;
+            background-color: #27ae60;
+        }
+        .stadium4 .visual div {
+            width: 210px;
+            height: 136px;
+            background: repeating-linear-gradient(
+                45deg,
+                #007BFF 10px,
+                #27ae60 10px,
+            );
+            position: relative;
+        }
+        .stadium4 .visual div::before {
+            content: "";
+            position: absolute;
+            
+            width: 176.2px;
+            height: 120.8px;
+            background: rgba(0, 0, 255, 0.6);
+        }
+        .stadium4 .visual div::after {
+            content: "";
+            position: absolute;
+            
+            width: 74.6px;
+            height: 44.4px;
+            background: rgba(0, 255, 0, 0.6);
+        }
+        .statistics {
+            margin-top: 30px;
+            background: #3a99bc56;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #007BFF;
+        }
+        .statistics p {
+            margin: 10px 0;
+        }
+        .statistics strong {
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .stadium {
+                flex-direction: column;
+                align-items: center; /* Center align the items */
+                text-align: center; /* Center the text */
+            }
+            .stadium .info, .stadium .visual {
+                width: 100%; /* Make each section span the full width */
+                margin-bottom: 10px; /* Add spacing between sections */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Match Details</title>
+    <style>
+        
+
+        
+
+        
+
+        .match-details h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .team-info, .weather-info, .stadium-info {
+            margin-bottom: 30px;
+        }
+
+        .team-info ul, .weather-info ul, .stadium-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .team-info li, .weather-info li, .stadium-info li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .team-info li span, .weather-info li span, .stadium-info li span {
+            font-weight: bold;
+        }
+
+        .player-list {
+            margin: 50px;
+        }
+
+        .player {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .player span {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .captain {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .player-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .player-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Football Match Details</h1>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                max-width: 700px;
+            }
+    
+            th, td {
+                border: 0.5px solid rgb(144, 144, 144);
+                padding: 10px;
+                text-align: center;
+                background-color: #0d4ec88c;
+            }
+    
+            th {
+                background-color: #009db1b3;
+                color: white;
+            }
+    
+        </style>
+<center>
+        <table>
+            <thead>
+                <tr>
+                    <th>WECTOYLAR FK</th>
+                    <th>RADNOYLAR FK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 GK RASHAD</td>
+                    <td>1 GK RIAD</td>
+                </tr>
+                <tr>
+                    <td>4 CB GASIM</td>
+                    <td>4 CB HUSEYN</td>
+                </tr>
+                <tr><!--      -->
+                    <td>3 CB TURAN</td>
+                    <td>3 CB SINAN</td>
+                </tr>
+                <tr>
+                    <td>2 RB TAMERLAN</td>
+                    <td>2 RB VALEH</td>
+                </tr>
+                <tr>
+                    <td>5 LB RASIM</td>
+                    <td>5 LB ELGUN</td>
+                </tr>
+                <tr>
+                    <td>6 CDM MAQA GE</td>
+                    <td>6 CDM AVAZ</td>
+                </tr>
+                <tr>
+                    <td>8 CM POLAD</td>
+                    <td>8 CM REVAN</td>
+                </tr>
+                <tr>
+                    <td>10 CM HESEN</td>
+                    <td>10 CM MAQA CS</td>
+                </tr>
+                <tr>
+                    <td>7 LW BAGIRLI</td>
+                    <td>7 LW NATIQ</td>
+                </tr>
+                <tr>
+                    <td>9 CF FUAD</td>
+                    <td>9 CF RAFIQ</td>
+                </tr>
+                <tr>
+                    <td>11 LW MIRI</td>
+                    <td>11 LW SALEH</td>
+                </tr>
+                <tr>
+                    <td>ZAMEN</td>
+                    <td>ZAMEN</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+            <div class="weather-info">
+                <ul>
+                    <li><span>⛅Weather:</span> Clear Sky, 6°C</li>
+                    <li><span>🌅Sunset Time:</span> 17:19</li>
+                </ul>
+            </div>
+
+            <div class="stadium-info">
+                <ul>
+                    <li><span>🏟️Stadium:  </span><a href="https://maps.app.goo.gl/DdiZWxbNUwB5g53D8">Sərhədçi İdman Olimpiya Mərkəzi, Khalglar Dostlugu</a></li>
+                    <li><span>📅Date:</span> 23 December 2024</li>
+                    <li><span>🕘Time:</span> 21:00</li>
+                    <li><span>💵Ticket Price:</span> ~ ₼10</li>
+                </ul>
+            </div>
+    </div>
+<br><br><br><br><br>
+
+    <div class="container">
+        <h1>Stadium Comparison</h1>
+        
+        <div class="stadium stadium1">
+            <div class="info">
+                <h2>Stadium Bigger (We'll play)</h2>
+                <p>Dimensions: 60.4m x 88.1m</p>
+                <p>Area: 5319.24 m²</p>
+                <p> = 75% FIFA Stad = 6x Small Stad</p>
+            </div>
+            <div class="visual">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="stadium stadium2">
+            <div class="info">
+                <h2>Stadium Smaller</h2>
+                <p>Dimensions: 22.2m x 37.3m</p>
+                <p>Area: 827.46 m²</p>
+            </div>
+            <div class="visual">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="stadium stadium3">
+            <div class="info">
+                <h2>FIFA Standart Stadium</h2>
+                <p>Dimensions: 105m x 68m</p>
+                <p>Area: 7140 m²</p>
+            </div>
+            <div class="visual">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="stadium stadium4">
+            <div class="info">
+                <h2>Nested Representation</h2>
+                <p>This visual combines all the stadiums, proportionally represented:</p>
+                <ul>
+                    <li>The outermost border represents the FIFA Standart Stadium.</li>
+                    <li>The middle rectangle represents the Bigger Stadium.</li>
+                    <li>The innermost rectangle represents the Smaller Stadium.</li>
+                </ul>
+            </div>
+            <div class="visual">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="statistics">
+            <h2>Statistics</h2><br>
+            <p><i>   - Comparing Areas:</i></p>
+            <p><strong class="stadium1">Bigger Stadium</strong>: 5319.24 m², which is <strong>74.5%</strong> the size of a <strong>FIFA Standard Stadium</strong>.</p>
+            <p><strong>Smaller Stadium</strong>: 827.46 m², which is only <strong>15.6%</strong> the size of a <strong class="stadium1">Bigger Stadium</strong>.</p>
+            <p>The <strong class="stadium1">Bigger Stadium</strong> area is <strong>6.43 times</strong> larger than the <strong>Smaller Stadium</strong>.</p>
+            <p>The <strong>FIFA Standard Stadium</strong>'s area is <strong>1.34 times</strong> larger than the <strong class="stadium1">Bigger Stadium</strong>.</p>
+            <br><br>
+            <p><i>   - Comparing Perimeters:</i></p>
+            <ul>
+                <li><strong>FIFA Standard Stadium</strong>: <strong>346m</strong></li>
+                <li><strong class="stadium1">Bigger Stadium</strong>: <strong>297m</strong></li>
+                <li><strong>Smaller Stadium</strong>: <strong>121m</strong></li>
+            </ul>
+            <p>The <strong>FIFA Standard Stadium</strong> perimeter is <strong>16.5%</strong> longer than the <strong class="stadium1">Bigger Stadium</strong>.</p>
+        
+            
+        </div>
+        
+       
+        
+    </div><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
