@@ -13,6 +13,9 @@
   <link rel="stylesheet" type="text/css" href="/gPAC/css2/component.css" />
   <link rel="icon" href="https://i.ibb.co/XYp8HWm/image-removebg-preview-1.png">
   <link rel="stylesheet" href="/gPAC/santa css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 </head>
 <body style="background-color: rgba(35,31,32,255);">
 <div>
@@ -86,6 +89,7 @@
 	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> Leave <b style="color: white;">blank</b> what you don't know</p>
 	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> Put 0 if you got 0</p>
 	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> Use . not ,</p>
+	<p>       <span style="color: white;font-size: 0.49rem; vertical-align:middle;">•</span> The coefficients displayed below the input fields are normalized to a total of <b style="color: white;">20</b>, ensuring their cumulative sum equals 20.</p>
 	<div class="container demo-2a">	
 		<div class="main clearfix">
 		  <div class="column">
@@ -165,16 +169,34 @@
 			</div><!-- /dl-menuwrapper -->
 		  </div>
 		</div>
-	  </div><!-- /container -->
+	  </div><!-- /container --><br>
+	  <div style="display: flex; justify-content: center; flex-wrap: wrap;" class="rahatciliq">
+		<a href="/gPAC/gpameter/licence3/s1/pe.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/8044/8044304.png" alt="" class="icon">
+		</a>
+		<a href="/gPAC/gpameter/licence3/s1/cs.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" class="icon">
+		</a>
+		<a href="/gPAC/gpameter/licence3/s1/ge.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/13628/13628415.png" alt="" class="icon">
+		</a>
+		<a href="/gPAC/gpameter/licence3/s1/ce.html">
+		  <img src="https://cdn-icons-png.flaticon.com/128/10296/10296400.png" alt="" class="icon">
+		</a>
+	  </div>
+	  
+	  
+	  
+  
 
   </section>
 
 	<div class="flex-parent-element">	
   		<section class="section1" id="calculation" style="background-color: rgb(0, 52, 79);">
 			<h1 style="text-align: center;">
-				<span style="display: inline-block; vertical-align: middle;">L3 / S1 / CS </span>
+				<span style="display: inline-block; vertical-align: middle;">L3 / S1 / CE </span>
 				<img src="
-				https://cdn-icons-png.flaticon.com/128/2115/2115955.png
+				https://cdn-icons-png.flaticon.com/128/3235/3235079.png
 				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 0px;height: 2rem;width: 2rem;">
 
 			</h1>
@@ -182,67 +204,36 @@
 
 			<fieldset>
 				<legend>
-					<span style="display: inline-block; vertical-align: middle;"> CS 5a</span>
+					<span style="display: inline-block; vertical-align: middle;"> MATHEMATICS</span>
 					<img src="
-					https://cdn-icons-png.flaticon.com/128/3896/3896610.png
+					https://cdn-icons-png.flaticon.com/128/18155/18155792.png
 					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 					 
 				</legend>
 				<fieldset style="margin-left: 10px;margin-right: 10px;">
 					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> PARALEL PRG</span>
+						<span style="display: inline-block; vertical-align: middle;"> ODE & PDE</span>
 						<img src="
-						https://cdn-icons-png.flaticon.com/128/16878/16878344.png
+						https://cdn-icons-png.flaticon.com/128/9989/9989533.png
 						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 						 
 					</legend>
 					<div class="elements">
-					<div class="element"><label for="paralel-cc1">PW</label>
-					<input type="text" id="paralel-cc1" name="paralel-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.11</h1></div>
+					<div class="element"><label for="odepde-cc1">MID</label>
+					<input type="text" id="odepde-cc1" name="odepde-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
+					
+					<div class="element"><label for="odepde-cc2">MID</label>
+						<input type="text" id="odepde-cc2" name="odepde-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
 	
-					<div class="element"><label for="paralel-cc2">EXAM</label>
-					<input type="text" id="paralel-cc2" name="paralel-cc2" min="0" max="20" oninput="calculateGPA()"><h1>1.11</h1></div>
+					<div class="element"><label for="odepde-cc3">FINAL</label>
+					<input type="text" id="odepde-cc3" name="odepde-cc3" min="0" max="20" oninput="calculateGPA()"><h1>1</h1></div>
 	
 					</div>
 				</fieldset><br>
 
 				
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> CLOUD</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/2316/2316109.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="cloud-cc1">PW</label>
-					<input type="text" id="cloud-cc1" name="cloud-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.11</h1></div>
-	
-					<div class="element"><label for="cloud-cc2">EXAM</label>
-					<input type="text" id="cloud-cc2" name="cloud-cc2" min="0" max="20" oninput="calculateGPA()"><h1>1.11</h1></div>
-	
-					</div>
-				</fieldset><br>
 
 				
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> SOFTWARE</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/3591/3591824.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="software-cc1">PW</label>
-					<input type="text" id="software-cc1" name="software-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.11</h1></div>
-	
-					<div class="element"><label for="software-cc2">EXAM</label>
-					<input type="text" id="software-cc2" name="software-cc2" min="0" max="20" oninput="calculateGPA()"><h1>1.11</h1></div>
-	
-					</div>
-				</fieldset><br>
 
 				
 				
@@ -250,32 +241,65 @@
 
 				<br>     
 			</fieldset><br>
+
+			
+			
+
+
 
 			<fieldset>
 				<legend>
-					<span style="display: inline-block; vertical-align: middle;"> CS 5b</span>
+					<span style="display: inline-block; vertical-align: middle;"> PHY CHEMISTRY</span>
 					<img src="
-					https://cdn-icons-png.flaticon.com/128/9828/9828932.png
+					https://cdn-icons-png.flaticon.com/128/5205/5205156.png
 					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 					 
 				</legend>
 				<fieldset style="margin-left: 10px;margin-right: 10px;">
 					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> OSA</span>
+						<span style="display: inline-block; vertical-align: middle;"> POLYMERS</span>
 						<img src="
-						https://cdn-icons-png.flaticon.com/128/3547/3547786.png
+						https://cdn-icons-png.flaticon.com/128/10001/10001358.png
 						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 						 
 					</legend>
 					<div class="elements">
-					<div class="element"><label for="OSA-cc1">PW</label>
-					<input type="text" id="OSA-cc1" name="OSA-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.95</h1></div>
+					<div class="element"><label for="polymers-cc1">EXAM</label>
+					<input type="text" id="polymers-cc1" name="polymers-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.66</h1></div>
 					
-					<div class="element"><label for="OSA-cc2">MID</label>
-						<input type="text" id="OSA-cc2" name="OSA-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.95</h1></div>
-	
-					<div class="element"><label for="OSA-cc2">FINAL</label>
-					<input type="text" id="OSA-cc2" name="OSA-cc2" min="0" max="20" oninput="calculateGPA()"><h1>1.43</h1></div>
+					</div>
+				</fieldset><br>
+
+
+
+
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> ANALYTICAL CHEM</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/2855/2855212.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="analytical-cc1">EXAM</label>
+					<input type="text" id="analytical-cc1" name="analytical-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.66</h1></div>
+					
+					</div>
+				</fieldset><br>
+
+				
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> EXPERIMENTAL CHEM</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/6746/6746310.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="expchem-cc1">PW</label>
+					<input type="text" id="expchem-cc1" name="expchem-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.66</h1></div>
 	
 					</div>
 				</fieldset><br>
@@ -283,37 +307,15 @@
 				
 				<fieldset style="margin-left: 10px;margin-right: 10px;">
 					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> MOBILE</span>
+						<span style="display: inline-block; vertical-align: middle;"> APPLIED CHEM</span>
 						<img src="
-						https://cdn-icons-png.flaticon.com/128/5608/5608615.png
+						https://cdn-icons-png.flaticon.com/128/11498/11498769.png
 						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 						 
 					</legend>
 					<div class="elements">
-					<div class="element"><label for="mobile-cc1">PW</label>
-					<input type="text" id="mobile-cc1" name="mobile-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.07</h1></div>
-	
-					<div class="element"><label for="mobile-cc2">EXAM</label>
-					<input type="text" id="mobile-cc2" name="mobile-cc2" min="0" max="20" oninput="calculateGPA()"><h1>1.60</h1></div>
-	
-					</div>
-				</fieldset><br>
-
-				
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> PROB, STATS</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/9850/9850819.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="prob-cc1">PW</label>
-					<input type="text" id="prob-cc1" name="prob-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.33</h1></div>
-	
-					<div class="element"><label for="prob-cc2">EXAM</label>
-					<input type="text" id="prob-cc2" name="prob-cc2" min="0" max="20" oninput="calculateGPA()"><h1>2</h1></div>
+					<div class="element"><label for="applied-cc1">EXAM</label>
+					<input type="text" id="applied-cc1" name="applied-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.66</h1></div>
 	
 					</div>
 				</fieldset><br>
@@ -325,6 +327,105 @@
 				<br>     
 			</fieldset><br>
 
+
+			<fieldset>
+				<legend>
+					<span style="display: inline-block; vertical-align: middle;"> CHEM ENGINEERING</span>
+					<img src="
+					https://cdn-icons-png.flaticon.com/128/9079/9079852.png
+					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+					 
+				</legend>
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> SYSTEMS DYNAMICS</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/18237/18237508.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="systems-cc1">EXAM</label>
+					<input type="text" id="systems-cc1" name="systems-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.83</h1></div>
+					
+					</div>
+				</fieldset><br>
+
+
+
+
+
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> CATALYSIS</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/11318/11318284.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="catalysis-cc1">HW</label>
+					<input type="text" id="catalysis-cc1" name="catalysis-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.73</h1></div>
+					
+					<div class="element"><label for="catalysis-cc2">EXAM</label>
+					<input type="text" id="catalysis-cc2" name="catalysis-cc2" min="0" max="20" oninput="calculateGPA()"><h1>1.1</h1></div>
+						
+					</div>
+				</fieldset><br>
+
+
+				
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> EXPERIMENTAL CE</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/3471/3471484.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="expce-cc1">REPORT</label>
+					<input type="text" id="expce-cc1" name="expce-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.83</h1></div>
+					
+					</div>
+				</fieldset><br>
+
+
+				
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> PROCESS</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/15401/15401033.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="process-cc1">REPORT</label>
+					<input type="text" id="process-cc1" name="process-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.92</h1></div>
+					
+					</div>
+				</fieldset><br>
+				
+				
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> CE PROJECT</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/1236/1236473.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="project-cc1">REPORT</label>
+					<input type="text" id="project-cc1" name="project-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.92</h1></div>
+					
+					</div>
+				</fieldset><br>
+
+				<br>     
+			</fieldset><br>
+			
 
 			
 
@@ -418,9 +519,9 @@
 		<section class="section1" id="resultation">
 
 			<h1 style="text-align: center;">
-				<span style="display: inline-block; vertical-align: middle;">L3 / S1 / CS </span>
+				<span style="display: inline-block; vertical-align: middle;">L3 / S1 / CE </span>
 				<img src="
-				https://cdn-icons-png.flaticon.com/128/2115/2115955.png
+				https://cdn-icons-png.flaticon.com/128/3235/3235079.png
 				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 0px;height: 2rem;width: 2rem;">
 
 			</h1>
@@ -470,67 +571,74 @@
 				<br>
 				<div class="result">
 					<h1>
-						MATH : 
-						<span id="math"></span>
+						ODE & PDE : 
+						<span id="odepde"></span>
 						<span>  </span>
-						<span id="mathp"></span>
+						<span id="odepdep"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						THERMO : 
-						<span id="thermo"></span>
+						POLYMERS : 
+						<span id="polymers"></span>
 						<span>  </span>
-						<span id="thermop"></span>
+						<span id="polymersp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						ELECTRICITY : 
-						<span id="electricity"></span>
+						ANALYTICAL CHEM : 
+						<span id="analytical"></span>
 						<span>  </span>
-						<span id="electricityp"></span>
+						<span id="analyticalp"></span>
 						<span >%</span>
 					</h1>
 
 					<h1>
-						REACTIVITY : 
-						<span id="react"></span>
+						EXPERIMENTAL CHEM : 
+						<span id="expchem"></span>
 						<span>  </span>
-						<span id="reactp"></span>
+						<span id="expchemp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						KINETICS : 
-						<span id="kinetics"></span>
+						APPLIED CHEM : 
+						<span id="applied"></span>
 						<span>  </span>
-						<span id="kineticsp"></span>
+						<span id="appliedp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						CHEM LAB : 
-						<span id="chemlab"></span>
+						SYSTEMS DYNAMICS : 
+						<span id="systems"></span>
 						<span>  </span>
-						<span id="chemlabp"></span>
+						<span id="systemsp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						DISTILLATION : 
-						<span id="distillation"></span>
+						CATALYSIS : 
+						<span id="catalysis"></span>
 						<span>  </span>
-						<span id="distillationp"></span>
+						<span id="catalysisp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						OPER SOLID : 
-						<span id="oper"></span>
+						EXPERIMENTAL CE : 
+						<span id="expce"></span>
 						<span>  </span>
-						<span id="operp"></span>
+						<span id="expcep"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						LIQUID : 
-						<span id="liquid"></span>
+						PROCESS : 
+						<span id="process"></span>
 						<span>  </span>
-						<span id="liquidp"></span>
+						<span id="processp"></span>
+						<span >%</span>
+					</h1>
+					<h1>
+						CE PROJECT : 
+						<span id="project"></span>
+						<span>  </span>
+						<span id="projectp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
@@ -541,10 +649,10 @@
 						<span >%</span>
 					</h1>
 					<h1>
-						ENGLISH : 
-						<span id="en"></span>
+						ACAD WRITING : 
+						<span id="acadwr"></span>
 						<span>  </span>
-						<span id="enp"></span>
+						<span id="acadwrp"></span>
 						<span >%</span>
 					</h1>
 				</div>
@@ -562,10 +670,24 @@
 				<br>
 				<div class="result">
 					<h1>
-						CHEMISTRY : 
-						<span id="chem"></span>
+						MATH : 
+						<span id="math"></span>
 						<span>  </span>
-						<span id="chemp"></span>
+						<span id="mathp"></span>
+						<span >%</span>
+					</h1>
+					<h1>
+						PHY CHEMISTRY : 
+						<span id="phychem"></span>
+						<span>  </span>
+						<span id="phychemp"></span>
+						<span >%</span>
+					</h1>
+					<h1>
+						CHEM ENGINEERING : 
+						<span id="chemeng"></span>
+						<span>  </span>
+						<span id="chemengp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
@@ -576,10 +698,10 @@
 						<span >%</span>
 					</h1>
 					<h1>
-						PHYSICS : 
-						<span id="phy"></span>
+						PROF PREP : 
+						<span id="profprep"></span>
 						<span>  </span>
-						<span id="phyp"></span>
+						<span id="profprepp"></span>
 						<span >%</span>
 					</h1>
 				</div>
@@ -622,10 +744,93 @@
 					<h1>
 						ADVICE : 
 						<span id="advicegpa"></span><br><br>  
-						<span id="advicechem"></span><br><br>  
+						<span id="advicemath"></span><br><br>  
+						<span id="advicephychem"></span><br><br>  
+						<span id="advicechemeng"></span><br><br>  
 						<span id="advicelang"></span><br><br>  
-						<span id="advicephy"></span>
+						<span id="adviceprofprep"></span>
 					</h1>
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>
+					<span style="display: inline-block;"> SUBJECTS</span>
+					<img src="
+					https://cdn-icons-png.flaticon.com/128/18089/18089221.png
+					" alt="icon" style="display: inline-block; margin-left: 0px;">
+					 
+				</legend>
+				<br>
+				<div class="result">
+
+					<h1 style="margin-bottom: -60px;">Horizontal Bar Chart of Exam Coefficients</h1>
+					<center>
+					<div id="myChart"></div>
+					</center>
+
+					<script>
+						google.charts.load('current', {'packages':['corechart']});
+						google.charts.setOnLoadCallback(drawChart);
+					  
+						function drawChart() {
+						  // Set Data
+						  const data = google.visualization.arrayToDataTable([
+							['Activity', 'Value', { role: 'annotation' }, { role: 'style' }],
+							['SYSTEMS DYNAMICS', 1.83, 'SYSTEMS', 'color: #526E48'],
+							['EXPERIMENTAL CHEMICAL ENGINEERING', 1.83, 'EXP CE', 'color: #508D4E'],
+							['POLYMERS', 1.66, 'POLYMERS', 'color: #800000'],
+							['ANALYTICAL CHEMISTRY', 1.66, 'ANALYTIC CH', 'color: #BF0000'],
+							['EXPERIMENTAL CHEMISTRY', 1.66, 'EXP CH', 'color: #FF0000'],
+							['APPLIED CHEMISTRY', 1.66, 'APPLIED CH', 'color: #FFA6A1'],
+							['CATALYSIS EXAM', 1.1, 'CATALYSIS EXAM', 'color: #95D2B3'],
+							['MATH FINAL', 1, 'MATH FINAL', 'color: #000ba1'],
+							['PROCESS SIMULATION', 0.92, 'PROCESS', 'color: #0A6847'],
+							['CHEMICAL ENGINEERING PROJECT', 0.92, 'CE PROJECT', 'color: #58A399'],
+							['FRENCH ORAL', 0.75, 'FRENCH ORAL', 'color: #db009a'],
+							['FRENCH FINAL', 0.75, 'FRENCH FINAL', 'color: #db009a'],
+							['CATALYSIS HW', 0.73, 'CATALYSIS HW', 'color: #95D2B3'],
+							['ACAD WRITING MID', 0.67, 'ACAD WRITING MID', 'color: #ffa600'],
+							['ACAD WRITING MID2', 0.67, 'ACAD WRITING MID2', 'color: #ffa600'],
+							['ACAD WRITING FINAL', 0.67, 'ACAD WRITING FINAL', 'color: #ffa600'],
+							['FRENCH MID', 0.5, 'FRENCH MID', 'color: #db009a'],
+							['MATH MID', 0.5, 'MATH MID', 'color: #000ba1'],
+							['MATH MID2', 0.5, 'MATH MID2', 'color: #000ba1']
+						]);
+
+
+					  
+						  // Set Options
+						  const options = {
+							backgroundColor: 'transparent', // Remove white background
+							bar: { groupWidth: '90%' }, // Thicker bars
+							legend: { position: 'none' },
+							annotations: {
+							  textStyle: {
+								fontSize: 11.5 // Adjusted for better readability
+							  }
+							},
+							vAxis: { textPosition: 'none' },  // Remove vertical axis
+							hAxis: { 
+							  textStyle: {
+								color: '#FFFFFF', // White text color
+								fontSize: 15 // Adjust font size if necessary
+							  } 
+							},
+							chartArea: {
+							  width: '92%', // Adjust chart area for better spacing
+							  height: '70%' // Adjust chart height for better bar spacing
+							}
+						  };
+					  
+						  // Draw
+						  const chart = new google.visualization.BarChart(document.getElementById('myChart'));
+						  chart.draw(data, options);
+						}
+					  </script>
+					  
+
 				</div>
 
 			</fieldset>
