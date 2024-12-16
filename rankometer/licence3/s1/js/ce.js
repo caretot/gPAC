@@ -101,3 +101,66 @@ function populateTable(rows) {
 
 // Call function to fetch and populate data on page load
 fetchTableData();
+
+
+
+
+
+
+
+
+const range = 'YESNO!J2:K20';
+const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
+
+const labels = [
+  'MATH MID1', 'MATH MID2', 'MATH FINAL', 'POLYMERS', 'ANALYTICAL CH', 'EXP CH', 'APPLIED CH', 'SYSTEMS',
+  'CATALYSIS HW', 'CATALYSIS EXAM', 'EXP CE', 'PROCESS', 'CE PROJECT', 'FRENCH ORAL', 'FRENCH MID',
+  'FRENCH FINAL', 'AC WRITING 1', 'AC WRITING 2', 'AC WRITING 3'
+];
+
+
+
+async function fecyesno() {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (data && data.values) {
+      yesnopoptable(data.values);
+    } else {
+      console.error('No data found!');
+    }
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
+function yesnopoptable(data) {
+  const tbody = document.querySelector('#examTable tbody');
+  tbody.innerHTML = '';  // Clear the table body before adding new rows
+
+  labels.forEach((label, index) => {
+    const row = document.createElement('tr');
+    const cellLabel = document.createElement('td');
+    const cellStatus = document.createElement('td');
+
+    cellLabel.textContent = label;
+
+    // Determine the status based on the data
+    const status = data[index] && data[index][1] === '1' ? '✅' : '❌';
+    cellStatus.textContent = status;
+
+    // Set the color of the label directly in JS
+    if (status === '✅') {
+      cellLabel.style.color = 'green';  // Set text color to green if true
+    } else {
+      cellLabel.style.color = 'red';  // Set text color to red if false
+    }
+
+    row.appendChild(cellLabel);
+    row.appendChild(cellStatus);
+    tbody.appendChild(row);
+  });
+}
+
+fecyesno();
