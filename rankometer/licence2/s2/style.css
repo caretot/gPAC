@@ -119,7 +119,7 @@
     border-color: #ccc;
     font-weight: 400;
   }
-  #myTable tr:nth-child(even) #myTable td:nth-of-type(8):before{
+  #myTable tr:nth-child(even)  td:nth-of-type(8):before{
     color: rgb(255, 255, 255);
     border-color: #ccc;
     font-weight: 400;
@@ -128,7 +128,7 @@
   #myTable tr:nth-child(odd){
     color: black;
   }
-  #myTable tr:nth-child(odd) #myTable td:nth-of-type(8):before{
+  #myTable tr:nth-child(odd)  td:nth-of-type(8):before{
     font-weight: 400;
     color: black;
   }
@@ -139,7 +139,7 @@
     border-color: black;
     font-weight: bold;
   }
-  #myTable tr:nth-child(1) #myTable td:nth-of-type(8):before{
+  #myTable tr:nth-child(1)  td:nth-of-type(8):before{
     font-weight: bold;
     color: white;
   }
