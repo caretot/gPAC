@@ -1,0 +1,180 @@
+/* Ensuring the menu has a higher stacking order */
+.dl-menuwrapper {
+  z-index: 1000; /* Ensure menu has a higher z-index */
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 4px;
+  color: #06c164;
+}
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #005d2e;
+  font-style: italic;
+}
+table {
+  width: 100%;
+  max-width: 1021px;
+  border-spacing: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: auto;
+}
+
+thead th {
+  background-color: #36304a;
+  color: #fff;
+  text-align: left;
+  text-align: center;
+  padding: 20px 1px;
+  border: 0px;
+}
+
+tbody tr.main-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr.main-row:hover {
+  background-color: #bebebe;
+  color: rgb(0, 0, 0);
+}
+
+tbody tr.expandable-row {
+  display: none;
+  background-color: #000000;
+}
+
+tbody tr:nth-of-type(4n+1) {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+tbody tr:nth-of-type(4n+3) {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+
+
+tbody td {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 22px 1px;
+  
+}
+
+.expandable-row td {
+  padding: 8px;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  gap: 15px; 
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.detail-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center; 
+  text-align: center; 
+}
+
+.detail-item span {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 40px;
+  background-color: #e9ecef;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  
+
+  .detail-item span {
+    font-size: 12px;
+  }
+  thead th {
+  background-color: #36304a;
+  color: #fff;
+  text-align: left;
+  text-align: center;
+  padding: 20px 1px;
+  border: 0px;
+  box-shadow: none;
+  }
+  th:nth-child(1){
+    writing-mode: vertical-rl; /* Rotates text vertically */
+      text-align: center;        /* Aligns text horizontally (after rotation) */
+      transform: rotate(180deg); /* Optional: flips text upside down */
+  }
+  table{
+    max-width: 90%;
+  }
+  .rahatciliq{
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+
+
+.container-chart {
+  max-width: 1021px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 1rem;
+}
+
+
+
+canvas {
+  width: 100%;
+  height: 400px; /* Default height */
+}
+
+@media (max-width: 768px) {
+  canvas {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+  .container-chart {
+    margin: auto;
+    margin-bottom: 3rem;
+    border:none;
+    color: #fff;
+  }
+}
