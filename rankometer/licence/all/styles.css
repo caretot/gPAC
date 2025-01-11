@@ -6,13 +6,18 @@
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   color: #06c164;
 }
-
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #005d2e;
+  font-style: italic;
+}
 table {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1021px;
   border-spacing: 0;
   border-radius: 18px;
   overflow: hidden;
@@ -128,8 +133,10 @@ tbody td {
   table{
     max-width: 90%;
   }
+  .rahatciliq{
+    margin-top: 50px;
+  }
 }
-
 
 
 
