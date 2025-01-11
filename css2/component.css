@@ -1,4 +1,7 @@
-
+/* Ensuring the menu has a higher stacking order */
+.dl-menuwrapper {
+  z-index: 1000; /* Ensure menu has a higher z-index */
+}
 @font-face {
     font-family: 'icomoon';
     src:url('../fonts/icomoon.eot');
