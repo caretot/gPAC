@@ -1,0 +1,63 @@
+
+  
+  /* Message Box Styling */
+  #message-box {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Header Styling */
+.message-header {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #24c500;
+    background-image: linear-gradient(45deg, #24c500, #ff5e62, #24c5ff, #ff9a44);
+    background-size: 400% 400%;
+    animation: gradient-animation 5s ease infinite;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Animation for smooth and modern font color change */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  
+  
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .lang-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+  }
+  
+  .lang-btn.active {
+    border: 2px solid yellow;
+    box-shadow: 0 0 8px yellow;
+  }
+  
