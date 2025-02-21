@@ -1,34 +1,27 @@
 function calculateGPA() {
    // Get the input values
-   let paralelCC1 = parseFloat(document.getElementById("paralel-cc1").value);
-   let paralelCC2 = parseFloat(document.getElementById("paralel-cc2").value);
-
-   let cloudCC1 = parseFloat(document.getElementById("cloud-cc1").value);
-   let cloudCC2 = parseFloat(document.getElementById("cloud-cc2").value);
    
-   let softwareCC1 = parseFloat(document.getElementById("software-cc1").value);
-   let softwareCC2 = parseFloat(document.getElementById("software-cc2").value);
+   let mlCC1 = parseFloat(document.getElementById("ml-cc1").value);
+let mlCC2 = parseFloat(document.getElementById("ml-cc2").value);
+
+let cvCC1 = parseFloat(document.getElementById("cv-cc1").value);
+let cvCC2 = parseFloat(document.getElementById("cv-cc2").value);
+
+let daCC1 = parseFloat(document.getElementById("da-cc1").value);
+let daCC2 = parseFloat(document.getElementById("da-cc2").value);
+
+let ssCC1 = parseFloat(document.getElementById("ss-cc1").value);
+let ssCC2 = parseFloat(document.getElementById("ss-cc2").value);
+
+ 
+   let managCC1 = parseFloat(document.getElementById("manag-cc1").value);
+   let managCC2 = parseFloat(document.getElementById("manag-cc2").value);
+   let managCC3 = parseFloat(document.getElementById("manag-cc3").value);
 
 
-
-   let OSACC1 = parseFloat(document.getElementById("OSA-cc1").value);
-   let OSACC2 = parseFloat(document.getElementById("OSA-cc2").value);
-   let OSACC3 = parseFloat(document.getElementById("OSA-cc3").value);
-
-   let mobileCC1 = parseFloat(document.getElementById("mobile-cc1").value);
-   let mobileCC2 = parseFloat(document.getElementById("mobile-cc2").value);
-   
-   let probCC1 = parseFloat(document.getElementById("prob-cc1").value);
-   let probCC2 = parseFloat(document.getElementById("prob-cc2").value);
-
-   let frCC1 = parseFloat(document.getElementById("fr-cc1").value);
-   let frCC2 = parseFloat(document.getElementById("fr-cc2").value);
-   let frCC3 = parseFloat(document.getElementById("fr-cc3").value);
-
-   let acadwrCC1 = parseFloat(document.getElementById("acadwr-cc1").value);
-   let acadwrCC2 = parseFloat(document.getElementById("acadwr-cc2").value);
-   let acadwrCC3 = parseFloat(document.getElementById("acadwr-cc3").value);
-
+   let internCC1 = parseFloat(document.getElementById("intern-cc1").value);
+   let internCC2 = parseFloat(document.getElementById("intern-cc2").value);
+   let internCC3 = parseFloat(document.getElementById("intern-cc3").value);
 
 
 
@@ -43,106 +36,75 @@ function calculateGPA() {
    let currenttotalgrades=0;
    
    const midterms = [
-      paralelCC1, paralelCC2,
-      cloudCC1, cloudCC2,
-      softwareCC1, softwareCC2,
-
-      OSACC1, OSACC2, OSACC3,
-      mobileCC1, mobileCC2,
-      probCC1,probCC2,
-
-      frCC1, frCC2, frCC3,
-
-      acadwrCC1, acadwrCC2, acadwrCC3
+      mlCC1, mlCC2,           // Machine Learning
+    cvCC1, cvCC2,           // Computer Vision
+    daCC1, daCC2,           // Data Analysis
+    ssCC1, ssCC2,            // Security
+      managCC1, managCC2, managCC3,        // Management
+      internCC1, internCC2, internCC3      // Internship
    ];
-
+   
    const coefs = [
-      10/6,10/6,
-      10/6,10/6,
-      10/6,10/6,
-
-      10/7,10/7,15/7,
-      1.6,2.4,
-      2,3,
-
-      0.75,1.125,1.125,
-      1,1,1
+      1.5,1.5,
+      1.5,1.5,
+      1.5,1.5,
+      1.5,1.5,
+      1, 1, 1,   // Management (same as before)
+      3, 6, 6    // Internship (same as before)
    ];
-
-
-
-
-
-
-
-
-
-    if(isNaN(paralelCC1)){
-      paralelCC1=0;
-   }
-   if(isNaN(paralelCC2)){
-      paralelCC2=0;
-   }
-   
-   if(isNaN(cloudCC1)){
-      cloudCC1=0;
-   }
-   if(isNaN(cloudCC2)){
-      cloudCC2=0;
-   }
-   
-   if(isNaN(softwareCC1)){
-      softwareCC1=0;
-   }
-   if(isNaN(softwareCC2)){
-      softwareCC2=0;
-   }
-   
-   if(isNaN(OSACC1)){
-      OSACC1=0;
-   }
-   if(isNaN(OSACC2)){
-      OSACC2=0;
-   }
-   if(isNaN(OSACC3)){
-      OSACC3=0;
-   }
-   
-   if(isNaN(mobileCC1)){
-      mobileCC1=0;
-   }
-   if(isNaN(mobileCC2)){
-      mobileCC2=0;
-   }
-   
-   if(isNaN(probCC1)){
-      probCC1=0;
-   }
-   if(isNaN(probCC2)){
-      probCC2=0;
-   }
-   
-   if(isNaN(frCC1)){
-      frCC1=0;
-   }
-   if(isNaN(frCC2)){
-      frCC2=0;
-   }
-   if(isNaN(frCC3)){
-      frCC3=0;
-   }
-   
-   if(isNaN(acadwrCC1)){
-      acadwrCC1=0;
-   }
-   if(isNaN(acadwrCC2)){
-      acadwrCC2=0;
-   }
-   if(isNaN(acadwrCC3)){
-      acadwrCC3=0;
-   }
    
 
+
+
+   if (isNaN(mlCC1)) {
+      mlCC1 = 0;
+  }
+  if (isNaN(mlCC2)) {
+      mlCC2 = 0;
+  }
+  
+  if (isNaN(cvCC1)) {
+      cvCC1 = 0;
+  }
+  if (isNaN(cvCC2)) {
+      cvCC2 = 0;
+  }
+  
+  if (isNaN(daCC1)) {
+      daCC1 = 0;
+  }
+  if (isNaN(daCC2)) {
+      daCC2 = 0;
+  }
+  
+  if (isNaN(ssCC1)) {
+      ssCC1 = 0;
+  }
+  if (isNaN(ssCC2)) {
+      ssCC2 = 0;
+  }
+  
+   
+   if (isNaN(managCC1)) {
+      managCC1 = 0;
+   }
+   if (isNaN(managCC2)) {
+      managCC2 = 0;
+   }
+   if (isNaN(managCC3)) {
+      managCC3 = 0;
+   }
+   
+   if (isNaN(internCC1)) {
+      internCC1 = 0;
+   }
+   if (isNaN(internCC2)) {
+      internCC2 = 0;
+   }
+   if (isNaN(internCC3)) {
+      internCC3 = 0;
+   }
+   
 
 
    for (let i = 0; i < midterms.length; i++) {
@@ -187,34 +149,31 @@ function calculateGPA() {
   let pul = "";
   let elaci = "";
   let advicegpa = "";
-  let advicecs5a = "";
-  let advicecs5b = "";
-  let advicelang = "";
-  let adviceprofprep = "";
+  let advicecs = "";
+  let adviceproprep = "";
+  let adviceinternship = "";
 
    // Calculate the GPA
    let totalCredits = 30; // Total credits of all courses
 
-   let paralelGPA = paralelCC1/2+paralelCC2/2;
-   let cloudGPA = cloudCC1/2+cloudCC2/2;
-   let softwareGPA = softwareCC1/2+softwareCC2/2;
-
-   let OSAGPA = ((OSACC1 * 2*5/7) + (OSACC2 * 2*5/7) + (OSACC3 * 3*5/7)) / 5;
-   let mobileGPA = ((mobileCC1 * 1.6) + (mobileCC2 * 2.4)) / 4;
-   let probGPA = ((probCC1 * 2) + (probCC2 * 3)) / 5;
-   
-   let frGPA = ((frCC1 * 0.5) + (frCC2 * 0.75) + (frCC3 * 0.75)) / 2;
-   let acadwrGPA = ((acadwrCC1 * 0.5) + (acadwrCC2 * 0.5) + (acadwrCC3 * 0.5)) / 1.5;
+   let mlGPA = (mlCC1 + mlCC2) / 2;
+let cvGPA = (cvCC1 + cvCC2) / 2;
+let daGPA = (daCC1 + daCC2) / 2;
+let ssGPA = (ssCC1 + ssCC2) / 2;
 
    
-   let cs5aGPA = paralelGPA/3+cloudGPA/3+softwareGPA/3;
-   let cs5bGPA = ((OSAGPA * 5) + (mobileGPA*4) + (probGPA*5))/14;
-   let langGPA = frGPA;
-   let profprepGPA = acadwrGPA;
 
 
+   let managGPA = ((managCC1 * 0.5) + (managCC2 * 0.5) + (managCC3 * 0.5)) / 1.5;
+   let internGPA = ((internCC1 * 3) + (internCC2 * 6) + (internCC3 * 6)) / 15;
 
-   let overallGPA = ((cs5aGPA * 10) + (cs5bGPA * 14) + (frGPA * 3) + (profprepGPA * 3) ) / totalCredits; // Overall GPA
+         
+   let csGPA = (mlGPA + cvGPA + daGPA + ssGPA) / 4;  // Average of ML, CV, DA, SS
+   let proprepGPA = managGPA;
+   let internshipGPA = internGPA;
+
+
+   let overallGPA = (csGPA*12 + proprepGPA*3 + internshipGPA*15)/30;
 
    
       // Checking the condition for the providing the
@@ -265,58 +224,48 @@ function calculateGPA() {
      advicegpa = "Keep pushing yourself. Seek support, refine your study strategies, and work towards improvement. Your efforts will pay off.";
   }
 
-  if (cs5aGPA >= 16) {
-   advicecs5a = "Exceptional performance! Your ability to excel in quality assurance, cloud technologies, and parallel computing highlights your technical prowess. Keep pushing boundaries and refining your skills for even greater success.";
-} else if (cs5aGPA <= 15.9999 && cs5aGPA >= 13.5) {
-   advicecs5a = "Great job maintaining a strong GPA! Your understanding of software reliability, scalable systems, and concurrent programming is commendable. Dive deeper into practical applications to strengthen your expertise.";
-} else if (cs5aGPA <= 13.4999999 && cs5aGPA >= 11.5) {
-   advicecs5a = "You’re doing well! Focus on reinforcing your knowledge of software testing, cloud platforms, and parallel algorithms. Practical projects can be an excellent way to enhance your learning and confidence.";
-} else if (cs5aGPA <= 11.4999999 && cs5aGPA >= 10) {
-   advicecs5a = "Keep going! Work on building a strong foundation in testing methodologies, cloud architecture, and parallel processing. Leverage tutorials and hands-on practice to make these concepts clearer.";
+// ADVICE COMPUTER SCIENCE
+if (csGPA >= 16) {
+   advicecs = "Exceptional performance in Computer Science! Your mastery in Machine Learning, Computer Vision, Data Analysis, and Security is impressive. Continue to explore advanced concepts and innovative technologies.";
+} else if (csGPA <= 15.9999 && csGPA >= 13.5) {
+   advicecs = "Great job in Computer Science! You have a solid understanding of Machine Learning, Computer Vision, Data Analysis, and Security. Keep working on applying your knowledge to real-world projects.";
+} else if (csGPA <= 13.4999 && csGPA >= 11.5) {
+   advicecs = "Solid performance in Computer Science! Focus on strengthening your grasp of the fundamental concepts in Machine Learning, Computer Vision, Data Analysis, and Security. Practical experience will enhance your skills.";
+} else if (csGPA <= 11.4999 && csGPA >= 10) {
+   advicecs = "Good start in Computer Science! Put more focus on the key aspects of Machine Learning, Computer Vision, Data Analysis, and Security. Apply theoretical knowledge to practical scenarios for better understanding.";
 } else {
-   advicecs5a = "This is a chance to regroup and refine your approach. Break down complex topics like certification standards, distributed computing, and concurrency into smaller steps, and seek guidance to overcome challenges.";
+   advicecs = "Improvement needed in Computer Science. Review your understanding of Machine Learning, Computer Vision, Data Analysis, and Security. Engage with additional resources and practical exercises to strengthen your foundation.";
 }
 
 
-  if (cs5bGPA >= 16) {
-   advicecs5b = "Outstanding work! Your mastery of complex topics like systems design, application development, and analytical methods showcases your dedication. Keep embracing challenges and refining your expertise.";
-} else if (cs5bGPA <= 15.9999 && cs5bGPA >= 13.5) {
-   advicecs5b = "Great job maintaining a strong performance! Your skills in technical problem-solving and data-driven thinking are solid. Stay curious and explore deeper applications of what you've learned.";
-} else if (cs5bGPA <= 13.4999999 && cs5bGPA >= 11.5) {
-   advicecs5b = "You’re making steady progress! Strengthen your understanding of foundational principles in system architectures, app design, and data analysis to build confidence in applying them.";
-} else if (cs5bGPA <= 11.4999999 && cs5bGPA >= 10) {
-   advicecs5b = "Keep going! Focus on grasping the essentials of system functionality, app logic, and statistical thinking. Seek out resources or mentors to help clarify tricky concepts and build momentum.";
-} else {
-   advicecs5b = "Take this as an opportunity to reset your approach. Concentrate on breaking down topics like systems and data into manageable parts, and don’t hesitate to seek support or experiment with new study methods.";
-}
-
-
-
-  if (langGPA >= 16){
-     advicelang = "Your language skills are exceptional! Consider taking advanced language courses or engaging in immersive experiences to further enhance your proficiency.";
- } else if (langGPA <= 15.9999 && langGPA >= 13.5) {
-     advicelang = "You're performing well in your language studies! Continue to actively participate in class discussions, practice regularly, and explore opportunities for practical application of your language skills.";
- } else if (langGPA <= 13.4999999 && langGPA >= 11.5) {
-     advicelang = "You're making good progress in your language studies. Ensure consistent practice, seek out diverse learning resources, and consider joining language-related clubs or activities for additional exposure.";
- } else if (langGPA <= 11.4999999 && langGPA >= 10) {
-     advicelang = "You're on the right track with your language studies. Focus on building a strong foundation by reinforcing basic concepts, practicing regularly, and seeking guidance from your language professors when needed.";
+ 
+// ADVICE MANAGEMENT
+if (proprepGPA >= 16) {
+   adviceproprep = "Outstanding work in management and entrepreneurship! Your strategic thinking and leadership skills are exceptional. Keep refining your ability to make bold, well-informed decisions.";
+ } else if (proprepGPA <= 15.9999 && proprepGPA >= 13.5) {
+   adviceproprep = "Great progress in management and entrepreneurship! You’re developing a solid foundation in leadership and business strategies. Continue strengthening your ability to handle real-world challenges.";
+ } else if (proprepGPA <= 13.4999 && proprepGPA >= 11.5) {
+   adviceproprep = "Good effort in management and entrepreneurship! Focus on enhancing your decision-making skills and expand your understanding of market dynamics and innovation.";
+ } else if (proprepGPA <= 11.4999 && proprepGPA >= 10) {
+   adviceproprep = "You’ve shown potential in management and entrepreneurship. Take time to improve your knowledge in key areas such as business planning, marketing, and organizational behavior.";
  } else {
-     advicelang = "While your language GPA may be lower, don't be discouraged. Identify specific areas for improvement, dedicate extra time to practice, and consider seeking additional support from language tutors or online resources.";
+   adviceproprep = "Management and entrepreneurship can be tough, but with consistent effort and learning, you can excel. Focus on building your problem-solving skills and seek mentorship for guidance.";
  }
 
  
- if (profprepGPA >= 16) {
-   adviceprofprep = "Your academic writing skills are outstanding! Your ability to construct coherent arguments and present ideas effectively is commendable. Consider engaging in advanced writing workshops or contributing to academic publications to refine your expertise.";
- } else if (profprepGPA <= 15.9999 && profprepGPA >= 13.5) {
-   adviceprofprep = "Great work in academic writing! You have a strong foundation. Continue practicing by writing essays or articles on diverse topics to expand your skills and develop a unique voice.";
- } else if (profprepGPA <= 13.4999 && profprepGPA >= 11.5) {
-   adviceprofprep = "You’re making good progress in academic writing. Focus on structuring your essays clearly, enhancing your vocabulary, and refining your critical analysis skills through regular practice.";
- } else if (profprepGPA <= 11.4999 && profprepGPA >= 10) {
-   adviceprofprep = "You’re on the right track in academic writing. Work on organizing your ideas more effectively, seek feedback from peers or instructors, and review grammar and style guidelines for polished work.";
+// ADVICE INTERNSHIP
+if (internshipGPA >= 16) {
+   adviceinternship = "Outstanding performance in your internship in geology or geophysics! Your technical skills and ability to analyze complex geological data are impressive. Keep seeking challenging projects to further sharpen your expertise.";
+ } else if (internshipGPA <= 15.9999 && internshipGPA >= 13.5) {
+   adviceinternship = "Great work in your internship! You’re gaining valuable experience in geology or geophysics. Continue building on your knowledge of field techniques and data interpretation.";
+ } else if (internshipGPA <= 13.4999 && internshipGPA >= 11.5) {
+   adviceinternship = "Good progress in your internship. Focus on enhancing your fieldwork skills and work on improving your understanding of data analysis to make a greater impact in geological studies.";
+ } else if (internshipGPA <= 11.4999 && internshipGPA >= 10) {
+   adviceinternship = "You’ve shown potential during your internship. Strengthen your foundation in geological principles and improve your technical skills through hands-on practice and more exposure to fieldwork.";
  } else {
-   adviceprofprep = "Academic writing can be challenging, but with consistent effort, you can improve. Start with outlining your ideas, practice regularly, and use feedback to refine your writing. Don't hesitate to seek guidance or resources to strengthen your skills.";
+   adviceinternship = "Internships in geology or geophysics can be demanding, but with persistence and dedication, you’ll see improvement. Focus on understanding the fundamentals and seek feedback from experienced professionals.";
  }
- 
+
 
 
 
@@ -344,54 +293,73 @@ function calculateGPA() {
    
    document.getElementById("letter").innerHTML = grades;
   
-   document.getElementById("paralel").innerHTML = paralelGPA.toFixed(2);
-   document.getElementById("paralelp").innerHTML = (paralelGPA/0.2).toFixed(1);
+   document.getElementById("ml").innerHTML = mlGPA.toFixed(2);
+   document.getElementById("mlp").innerHTML = (mlGPA / 0.2).toFixed(1);
 
-   document.getElementById("cloud").innerHTML = cloudGPA.toFixed(2);
-   document.getElementById("cloudp").innerHTML = (cloudGPA/0.2).toFixed(1);
+   document.getElementById("cv").innerHTML = cvGPA.toFixed(2);
+   document.getElementById("cvp").innerHTML = (cvGPA / 0.2).toFixed(1);
 
-   document.getElementById("mobile").innerHTML = mobileGPA.toFixed(2);
-   document.getElementById("mobilep").innerHTML = (mobileGPA/0.2).toFixed(1);
+   document.getElementById("da").innerHTML = daGPA.toFixed(2);
+   document.getElementById("dap").innerHTML = (daGPA / 0.2).toFixed(1);
 
-   document.getElementById("software").innerHTML = softwareGPA.toFixed(2);
-   document.getElementById("softwarep").innerHTML = (softwareGPA/0.2).toFixed(1);
-
-   document.getElementById("OSA").innerHTML = OSAGPA.toFixed(2);
-   document.getElementById("OSAp").innerHTML = (OSAGPA/0.2).toFixed(1);
-
-   document.getElementById("prob").innerHTML = probGPA.toFixed(2);
-   document.getElementById("probp").innerHTML = (probGPA/0.2).toFixed(1);
-
-   document.getElementById("fr").innerHTML = frGPA.toFixed(2);
-   document.getElementById("frp").innerHTML = (frGPA/0.2).toFixed(1);
-
-   document.getElementById("acadwr").innerHTML = acadwrGPA.toFixed(2);
-   document.getElementById("acadwrp").innerHTML = (acadwrGPA/0.2).toFixed(1);
+   document.getElementById("ss").innerHTML = ssGPA.toFixed(2);
+   document.getElementById("ssp").innerHTML = (ssGPA / 0.2).toFixed(1);
 
 
+   document.getElementById("manag").innerHTML = managGPA.toFixed(2);
+   document.getElementById("managp").innerHTML = (managGPA / 0.2).toFixed(1);
 
-   
-   document.getElementById("cs5a").innerHTML = cs5aGPA.toFixed(2);
-   document.getElementById("cs5ap").innerHTML = (cs5aGPA/0.2).toFixed(1);
-   document.getElementById("cs5b").innerHTML = cs5bGPA.toFixed(2);
-   document.getElementById("cs5bp").innerHTML = (cs5bGPA/0.2).toFixed(1);
-   
-   document.getElementById("lang").innerHTML = langGPA.toFixed(2);
-   document.getElementById("langp").innerHTML = (langGPA/0.2).toFixed(1);
-   
-   document.getElementById("profprep").innerHTML = profprepGPA.toFixed(2);
-   document.getElementById("profprepp").innerHTML = (profprepGPA/0.2).toFixed(1);
-   
+   document.getElementById("intern").innerHTML = internGPA.toFixed(2);
+   document.getElementById("internp").innerHTML = (internGPA / 0.2).toFixed(1);
+
+
+   document.getElementById("cs").innerHTML = csGPA.toFixed(2);
+   document.getElementById("csp").innerHTML = (csGPA / 0.2).toFixed(1);
+
+   document.getElementById("proprep").innerHTML = proprepGPA.toFixed(2);
+   document.getElementById("proprepp").innerHTML = (proprepGPA / 0.2).toFixed(1);
+
+   document.getElementById("internship").innerHTML = internshipGPA.toFixed(2);
+   document.getElementById("internshipp").innerHTML = (internshipGPA / 0.2).toFixed(1);
+
    document.getElementById("type").innerHTML = elaci;
    document.getElementById("amount").innerHTML = pul;
 
+// Updated code
+document.getElementById("advicegpa").innerHTML = advicegpa;
+document.getElementById("advicecs").innerHTML = advicecs;
+document.getElementById("adviceproprep").innerHTML = adviceproprep;
+document.getElementById("adviceinternship").innerHTML = adviceinternship;
 
-   document.getElementById("advicegpa").innerHTML = advicegpa;
-   document.getElementById("advicecs5a").innerHTML = advicecs5a;
-   document.getElementById("advicecs5b").innerHTML = advicecs5b;
-   document.getElementById("advicelang").innerHTML = advicelang;
-   document.getElementById("adviceprofprep").innerHTML = adviceprofprep;
+
    
+// Generate a random percentage for testing (Replace with real value)
+let progbarval = currentgpa.toFixed(2);
+let moterizede = currentgpa*0.2.toFixed(2);
+let progressBar = document.getElementById("progressbar");
+let progressText = document.getElementById("progressbarvalue");
+
+// Update width of progress bar
+progressBar.style.width = progbarval + "%";
+
+// Update text inside the progress bar
+progressText.innerHTML = progbarval + "% (" + moterizede.toFixed(2) + ")";
+
+// Change color based on value
+if (currentgpa*0.2 < 10) {
+    progressBar.style.backgroundColor = "red";
+} else if (currentgpa*0.2 >= 10 && currentgpa*0.2 < 11.5) {
+    progressBar.style.backgroundColor = "yellow";
+} else if (currentgpa*0.2 >= 11.5 && currentgpa*0.2 < 13.5) {
+    progressBar.style.backgroundColor = "orange";
+} else {
+    progressBar.style.backgroundColor = "green";
+}
+
+
+
+
+
 
 
 }
@@ -399,3 +367,7 @@ function calculateGPA() {
 window.onload = function() {
    calculateGPA();
  };
+
+
+   
+
