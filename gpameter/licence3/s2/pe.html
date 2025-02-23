@@ -20,33 +20,44 @@
 <body style="background-color: rgba(35,31,32,255);">
 <div>
 
+    
+	<link rel="stylesheet" href="/gPAC/navbar.css">
+  
 	<header style="background-color: rgb(76, 76, 76);">
-    <div class="nav__container" style="background-color: rgb(76, 76, 76);">
-      <div class="nav__mobile">     
-        <div><a href="/gPAC/index.html"><img src="https://i.ibb.co/XYp8HWm/image-removebg-preview-1.png" style="width: 2.5rem;height: 2.5rem;"></a>
-        </div>
-        <div class="nav__btn">
-          <a aria-label="Mobile menu" class="nav-toggle fade"><span></span><span class="mrg"></span><span class="mrg"></span></a>
-        </div>
-      </div>
-        <nav class="menu-toggle">
-          <ul class="nav__menu"><br>
-            <li><a href="/gPAC/index.html">HOME</a></li>
-                <li class="dropdown"><a href="javascript:void(0)" style="color: rgb(0,251,251);text-decoration:none;">METERTOOLS </a>
-              <ul>
-                <li><a href="/gPAC/rankometer/rankometer.html">RANKOMETER</a></li>
-                <li><a href="/gPAC/gpameter/gpameter.html" style="color: rgb(0,251,251);text-decoration:none;">GPAMETER</a></li>
-                <li><a href="/gPAC/fenometer/fenometer.html">FENOMETER</a></li>
-                <li><a href="/gPAC/minemeter/minemeter.html">MINEMETER</a></li>
-              </ul>
-            </li>
-            <li><a href="/gPAC/about.html">ABOUT</a></li>
-            <li><a href="/gPAC/team.html">TEAM</a></li>
-            <li><a href="https://wa.link/u1hb3y">CONTACT</a></li>
-          </ul>
-        </nav>
-    </div>
-  </header>
+	  <div class="nav__container" style="background-color: rgb(76, 76, 76);">
+		<div class="nav__mobile">     
+		  <div><a href="/gPAC/index.html"><img src="https://i.ibb.co/XYp8HWm/image-removebg-preview-1.png" style="width: 2.5rem;height: 2.5rem;"></a>
+		  </div>
+		  <div class="nav__btn">
+			<a aria-label="Mobile menu" class="nav-toggle fade"><span></span><span class="mrg"></span><span class="mrg"></span></a>
+		  </div>
+		</div>
+		<nav class="menu-toggle">
+		  <ul class="nav__menu">
+			<li><a href="/gPAC/index.html">HOME</a></li>
+		
+			<li class="custom-dropdown">
+			  <a href="javascript:void(0)" class="custom-dropdown-toggle active_a">
+				METERTOOLS <i class="arrow down"></i>
+			  </a>
+			  <ul class="custom-dropdown-menu">
+				<li><a href="/gPAC/rankometer/rankometer.html">RANKOMETER</a></li>
+				<li><a href="/gPAC/gpameter/gpameter.html" class="active_a">GPAMETER</a></li>
+				<li><a href="/gPAC/fenometer/fenometer.html">FENOMETER</a></li>
+				<li><a href="/gPAC/minemeter/minemeter.html">MINEMETER</a></li>
+			  </ul>
+			</li>
+		
+			<li><a href="/gPAC/about.html">ABOUT</a></li>
+			<li><a href="/gPAC/team.html">TEAM</a></li>
+			<li><a href="https://wa.link/u1hb3y">CONTACT</a></li>
+		  </ul>
+		</nav>
+		
+		
+	  </div>
+	</header>
+  <script src="/gPAC/navbar.js"></script>
 
   
 
@@ -171,18 +182,18 @@
 		</div>
 	  </div><!-- /container --><br>
 	  <div style="display: flex; justify-content: center; flex-wrap: wrap;" class="rahatciliq">
-		
-		<a href="/gPAC/gpameter/licence3/s1/ce.html">
+		<a href="/gPAC/gpameter/licence3/s2/ce.html">
 		  <img src="https://cdn-icons-png.flaticon.com/128/10296/10296400.png" alt="" class="icon">
 		</a>
-		<a href="/gPAC/gpameter/licence3/s1/cs.html">
+		<a href="/gPAC/gpameter/licence3/s2/cs.html">
 		  <img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" class="icon">
 		</a>
-		<a href="/gPAC/gpameter/licence3/s1/ge.html">
+		<a href="/gPAC/gpameter/licence3/s2/ge.html">
 		  <img src="https://cdn-icons-png.flaticon.com/128/13628/13628415.png" alt="" class="icon">
-		</a><a href="/gPAC/gpameter/licence3/s1/pe.html">
-		  <img src="https://cdn-icons-png.flaticon.com/128/8044/8044304.png" alt="" class="icon">
 		</a>
+		<a href="/gPAC/gpameter/licence3/s2/pe.html">
+			<img src="https://cdn-icons-png.flaticon.com/128/8044/8044304.png" alt="" class="icon">
+		  </a>
 	  </div>
 	  
 	  
@@ -190,11 +201,17 @@
   
 
   </section>
+  
+		<div class="progress-container" id="progressContainer">
+			<div class="progress-bar" id="progressbar"></div>
+			<div class="progress-text" id="progressbarvalue">0%</div>
+		</div>
+
 
 	<div class="flex-parent-element">	
   		<section class="section1" id="calculation" style="background-color: rgb(0, 52, 79);">
 			<h1 style="text-align: center;">
-				<span style="display: inline-block; vertical-align: middle;">L3 / S1 / PE </span>
+				<span style="display: inline-block; vertical-align: middle;">L3 / S2 / PE </span>
 				<img src="
 				https://cdn-icons-png.flaticon.com/128/2311/2311285.png
 				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 0px;height: 2rem;width: 2rem;">
@@ -204,254 +221,67 @@
 
 			<fieldset>
 				<legend>
-					<span style="display: inline-block; vertical-align: middle;"> MATHEMATICS</span>
+					<span style="display: inline-block; vertical-align: middle;"> GEORESOURCES</span>
 					<img src="
-					https://cdn-icons-png.flaticon.com/128/18155/18155792.png
+					https://cdn-icons-png.flaticon.com/128/9602/9602039.png
 					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 					 
 				</legend>
+
+
 				<fieldset style="margin-left: 10px;margin-right: 10px;">
 					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> ODE & PDE</span>
+						<span style="display: inline-block; vertical-align: middle;"> E TRANS & GEOTH E</span>
 						<img src="
-						https://cdn-icons-png.flaticon.com/128/9989/9989533.png
+						https://cdn-icons-png.flaticon.com/128/9876/9876470.png
 						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 						 
 					</legend>
 					<div class="elements">
-					<div class="element"><label for="odepde-cc1">MID</label>
-					<input type="text" id="odepde-cc1" name="odepde-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
+					<div class="element"><label for="trans-cc1">EXAM</label>
+					<input type="text" id="trans-cc1" name="trans-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.6</h1></div>
 					
-					<div class="element"><label for="odepde-cc2">MID</label>
-						<input type="text" id="odepde-cc2" name="odepde-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
-	
-					<div class="element"><label for="odepde-cc3">FINAL</label>
-					<input type="text" id="odepde-cc3" name="odepde-cc3" min="0" max="20" oninput="calculateGPA()"><h1>1</h1></div>
 	
 					</div>
 				</fieldset><br>
 
-				
-
-				
-
-				
-				
-				
-
-				<br>     
-			</fieldset><br>
-
-			
-			<fieldset>
-				<legend>
-					<span style="display: inline-block; vertical-align: middle;"> PHYSICS</span>
-					<img src="
-					https://cdn-icons-png.flaticon.com/128/882/882991.png
-					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-					 
-				</legend>
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> FLUID</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/11531/11531038.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="fluid-cc1">PW</label>
-					<input type="text" id="fluid-cc1" name="fluid-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.67</h1></div>
-					
-					<div class="element"><label for="fluid-cc2">EXAM</label>
-						<input type="text" id="fluid-cc2" name="fluid-cc2" min="0" max="20" oninput="calculateGPA()"><h1>1</h1></div>
-	
-					<div class="element"><label for="fluid-cc3">LAB</label>
-					<input type="text" id="fluid-cc3" name="fluid-cc3" min="0" max="20" oninput="calculateGPA()"><h1>0.33</h1></div>
-	
-					</div>
-				</fieldset><br>
-				<br>     
-			</fieldset><br>
 
 
 
-			<fieldset>
-				<legend>
-					<span style="display: inline-block; vertical-align: middle;"> GEOPHYSICS</span>
-					<img src="
-					https://cdn-icons-png.flaticon.com/128/12531/12531638.png
-					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-					 
-				</legend>
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> ERT RHEO</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/1867/1867550.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="ertrheo-cc1">EXAM</label>
-					<input type="text" id="ertrheo-cc1" name="ertrheo-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.6</h1></div>
-					
-					</div>
-				</fieldset><br>
-
-
-				
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> GEOLOGY AZ</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/5055/5055532.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="geologyaz-cc1">EXAM</label>
-					<input type="text" id="geologyaz-cc1" name="geologyaz-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.6</h1></div>
-					
-					</div>
-				</fieldset><br>
-
-				
-
-				
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> REMOTE</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/16113/16113591.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="remote-cc1">PW</label>
-					<input type="text" id="remote-cc1" name="remote-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.4</h1></div>
-	
-					<div class="element"><label for="remote-cc2">ORAL</label>
-					<input type="text" id="remote-cc2" name="remote-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.4</h1></div>
-	
-					</div>
-				</fieldset><br>
-
-				
-				
-				
-
-				<br>     
-			</fieldset><br>
-
-
-			<fieldset>
-				<legend>
-					<span style="display: inline-block; vertical-align: middle;"> PE GEOLOGY</span>
-					<img src="
-					https://cdn-icons-png.flaticon.com/128/3251/3251139.png
-					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-					 
-				</legend>
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> SEISMIC</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/15609/15609224.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="seismic-cc1">EXAM</label>
-					<input type="text" id="seismic-cc1" name="seismic-cc1" min="0" max="20" oninput="calculateGPA()"><h1>2</h1></div>
-					
-					</div>
-				</fieldset><br>
-
-
-
-
-				
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> WELL</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/3696/3696788.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="well-cc1">EXAM</label>
-					<input type="text" id="well-cc1" name="well-cc1" min="0" max="20" oninput="calculateGPA()"><h1>2</h1></div>
-					
-					</div>
-				</fieldset><br>
-
-
-				
 				<fieldset style="margin-left: 10px;margin-right: 10px;">
 					<legend>
 						<span style="display: inline-block; vertical-align: middle;"> RESERVOIR</span>
 						<img src="
-						https://cdn-icons-png.flaticon.com/128/8809/8809497.png
+						https://cdn-icons-png.flaticon.com/128/1411/1411801.png
 						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 						 
 					</legend>
 					<div class="elements">
 					<div class="element"><label for="reservoir-cc1">EXAM</label>
-					<input type="text" id="reservoir-cc1" name="reservoir-cc1" min="0" max="20" oninput="calculateGPA()"><h1>2</h1></div>
+					<input type="text" id="reservoir-cc1" name="reservoir-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.6</h1></div>
 					
-					</div>
-				</fieldset><br>
-				
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> PETREL</span>
-						<img src="
-						https://www.petroleumsoftwares.com/wp-content/uploads/edd/2020/07/petrel.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="petrel-cc1">PW</label>
-					<input type="text" id="petrel-cc1" name="petrel-cc1" min="0" max="20" oninput="calculateGPA()"><h1>2</h1></div>
-					
-					</div>
-				</fieldset><br>
-				
-
-				<br>     
-			</fieldset><br>
-			
-
-			
-
-
-			<fieldset>
-				<legend>
-					<span style="display: inline-block; vertical-align: middle;"> LANGUAGE</span>
-					<img src="
-					https://cdn-icons-png.flaticon.com/128/888/888878.png
-					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-					 
-				</legend>
-				<fieldset style="margin-left: 10px;margin-right: 10px;">
-					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> FRENCH</span>
-						<img src="
-						https://cdn-icons-png.flaticon.com/128/317/317182.png
-						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-						 
-					</legend>
-					<div class="elements">
-					<div class="element"><label for="fr-cc1">MID</label>
-					<input type="text" id="fr-cc1" name="fr-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.5</h1></div>
-					
-					<div class="element"><label for="fr-cc2">ORAL</label>
-						<input type="text" id="fr-cc2" name="fr-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.75</h1></div>
 	
-					<div class="element"><label for="fr-cc3">FINAL</label>
-					<input type="text" id="fr-cc3" name="fr-cc3" min="0" max="20" oninput="calculateGPA()"><h1>0.75</h1></div>
+					</div>
+				</fieldset><br>
+
+				
+
+
+				
+
+				
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> PRODUCTION</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/2162/2162536.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="production-cc1">EXAM</label>
+					<input type="text" id="production-cc1" name="production-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.6</h1></div>
+					
 	
 					</div>
 				</fieldset><br>
@@ -459,6 +289,43 @@
 				
 
 				
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> O&G RES</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/8809/8809217.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="oilgas-cc1">EXAM</label>
+					<input type="text" id="oilgas-cc1" name="oilgas-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.6</h1></div>
+					
+	
+					</div>
+				</fieldset><br>
+				
+				
+
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> RISK</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/9217/9217594.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="risk-cc1">EXAM</label>
+					<input type="text" id="risk-cc1" name="risk-cc1" min="0" max="20" oninput="calculateGPA()"><h1>1.6</h1></div>
+					
+	
+					</div>
+				</fieldset><br>
+
+				
+
+				
 
 				
 				
@@ -466,6 +333,15 @@
 
 				<br>     
 			</fieldset><br>
+
+
+
+
+
+			
+
+			
+
 
 
 			<fieldset>
@@ -478,21 +354,117 @@
 				</legend>
 				<fieldset style="margin-left: 10px;margin-right: 10px;">
 					<legend>
-						<span style="display: inline-block; vertical-align: middle;"> ACAD WRITING</span>
+						<span style="display: inline-block; vertical-align: middle;"> MANAG & ENTREP</span>
 						<img src="
-						https://cdn-icons-png.flaticon.com/128/17649/17649753.png
+						https://cdn-icons-png.flaticon.com/128/7521/7521512.png
 						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
 						 
 					</legend>
 					<div class="elements">
-					<div class="element"><label for="acadwr-cc1">MID</label>
-					<input type="text" id="acadwr-cc1" name="acadwr-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.67</h1></div>
+					<div class="element"><label for="manag-cc1">EXAM</label>
+					<input type="text" id="manag-cc1" name="manag-cc1" min="0" max="20" oninput="calculateGPA()"><h1>0.67</h1></div>
 					
-					<div class="element"><label for="acadwr-cc2">MID</label>
-						<input type="text" id="acadwr-cc2" name="acadwr-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.67</h1></div>
+					<div class="element"><label for="manag-cc2">MAN</label>
+						<input type="text" id="manag-cc2" name="manag-cc2" min="0" max="20" oninput="calculateGPA()"><h1>0.67</h1></div>
 	
-					<div class="element"><label for="acadwr-cc3">FINAL</label>
-					<input type="text" id="acadwr-cc3" name="acadwr-cc3" min="0" max="20" oninput="calculateGPA()"><h1>0.67</h1></div>
+					<div class="element"><label for="manag-cc3">ENTR</label>
+					<input type="text" id="manag-cc3" name="manag-cc3" min="0" max="20" oninput="calculateGPA()"><h1>0.67</h1></div>
+	
+					</div>
+				</fieldset><br>
+
+				<style>
+					body {
+						overscroll-behavior: contain; /* Prevents scrolling when keyboard opens */
+					}
+				
+					.progress-container {
+						position: fixed;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 30px;
+						background-color: #eee;
+						overflow: hidden;
+						z-index: 9999;
+						transition: bottom 0.3s ease;
+					}
+				</style>
+				
+				
+				
+				
+				<script>
+					function adjustProgressBar() {
+						const progressBar = document.getElementById("progressContainer");
+						if (!progressBar) return;
+				
+						const viewportHeight = window.innerHeight;
+						const fullHeight = screen.height;
+				
+						if (viewportHeight < fullHeight * 0.75) {
+							// Keyboard is open → Keep progress bar in view
+							progressBar.style.position = "absolute";
+							progressBar.style.bottom = "50px"; // Push it above the keyboard
+							document.body.style.overflow = "hidden"; // Stop scrolling
+						} else {
+							// Keyboard is closed → Reset position
+							progressBar.style.position = "fixed";
+							progressBar.style.bottom = "0";
+							document.body.style.overflow = "auto"; // Allow scrolling again
+						}
+					}
+				
+					// Detect when an input field is focused
+					document.getElementById("inputField").addEventListener("focus", () => {
+						setTimeout(adjustProgressBar, 300); // Delay to wait for keyboard animation
+					});
+				
+					// Detect when input loses focus (keyboard closes)
+					document.getElementById("inputField").addEventListener("blur", () => {
+						setTimeout(adjustProgressBar, 300);
+					});
+				
+					// Listen for viewport resizing
+					window.addEventListener("resize", adjustProgressBar);
+				</script>
+				
+				
+				
+
+				
+				
+				
+
+				<br>     
+			</fieldset><br>
+
+
+			<fieldset>
+				<legend>
+					<span style="display: inline-block; vertical-align: middle;"> INTERNSHIP</span>
+					<img src="
+					https://cdn-icons-png.flaticon.com/128/18096/18096996.png
+					" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+					 
+				</legend>
+				<fieldset style="margin-left: 10px;margin-right: 10px;">
+					<legend>
+						<span style="display: inline-block; vertical-align: middle;"> INTERNSHIP</span>
+						<img src="
+						https://cdn-icons-png.flaticon.com/128/3499/3499393.png
+						" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+						 
+					</legend>
+					<div class="elements">
+					<div class="element"><label for="intern-cc1">SUP</label>
+					<input type="text" id="intern-cc1" name="intern-cc1" min="0" max="20" oninput="calculateGPA()"><h1>2</h1></div>
+					
+					<div class="element"><label for="intern-cc2">DEF</label>
+						<input type="text" id="intern-cc2" name="intern-cc2" min="0" max="20" oninput="calculateGPA()"><h1>4</h1></div>
+	
+					<div class="element"><label for="intern-cc3">REPORT</label>
+					<input type="text" id="intern-cc3" name="intern-cc3" min="0" max="20" oninput="calculateGPA()"><h1>4</h1></div>
 	
 					</div>
 				</fieldset><br>
@@ -516,7 +488,7 @@
 		<section class="section1" id="resultation">
 
 			<h1 style="text-align: center;">
-				<span style="display: inline-block; vertical-align: middle;">L3 / S1 / PE </span>
+				<span style="display: inline-block; vertical-align: middle;">L3 / S2 / PE </span>
 				<img src="
 				https://cdn-icons-png.flaticon.com/128/2311/2311285.png
 				" alt="icon" style="display: inline-block; vertical-align: middle; margin-left: 0px;height: 2rem;width: 2rem;">
@@ -567,54 +539,13 @@
 				</legend>
 				<br>
 				<div class="result">
-					<h1>
-						ODE & PDE : 
-						<span id="odepde"></span>
-						<span>  </span>
-						<span id="odepdep"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						FLUID : 
-						<span id="fluid"></span>
-						<span>  </span>
-						<span id="fluidp"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						EARTH RHEOLOGY : 
-						<span id="ertrheo"></span>
-						<span>  </span>
-						<span id="ertrheop"></span>
-						<span >%</span>
-					</h1>
+					
 
 					<h1>
-						GEOLOGY AZ : 
-						<span id="geologyaz"></span>
+						E TRANS & GEOTH E : 
+						<span id="trans"></span>
 						<span>  </span>
-						<span id="geologyazp"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						REMOTE : 
-						<span id="remote"></span>
-						<span>  </span>
-						<span id="remotep"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						SEISMIC : 
-						<span id="seismic"></span>
-						<span>  </span>
-						<span id="seismicp"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						WELL : 
-						<span id="well"></span>
-						<span>  </span>
-						<span id="wellp"></span>
+						<span id="transp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
@@ -625,24 +556,38 @@
 						<span >%</span>
 					</h1>
 					<h1>
-						PETREL : 
-						<span id="petrel"></span>
+						PRODUCTION : 
+						<span id="production"></span>
 						<span>  </span>
-						<span id="petrelp"></span>
+						<span id="productionp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						FRENCH : 
-						<span id="fr"></span>
+						O&G RES : 
+						<span id="oilgas"></span>
 						<span>  </span>
-						<span id="frp"></span>
+						<span id="oilgasp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						ACAD WRITING : 
-						<span id="acadwr"></span>
+						RISK : 
+						<span id="risk"></span>
 						<span>  </span>
-						<span id="acadwrp"></span>
+						<span id="riskp"></span>
+						<span >%</span>
+					</h1>
+					<h1>
+						MANAG & ENTREP : 
+						<span id="manag"></span>
+						<span>  </span>
+						<span id="managp"></span>
+						<span >%</span>
+					</h1>
+					<h1>
+						INTERNSHIP : 
+						<span id="intern"></span>
+						<span>  </span>
+						<span id="internp"></span>
 						<span >%</span>
 					</h1>
 				</div>
@@ -660,45 +605,24 @@
 				<br>
 				<div class="result">
 					<h1>
-						MATH : 
-						<span id="math"></span>
+						GEORESOURCES : 
+						<span id="geores"></span>
 						<span>  </span>
-						<span id="mathp"></span>
+						<span id="georesp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						PHYSICS : 
-						<span id="physics"></span>
+						PRO PREP : 
+						<span id="proprep"></span>
 						<span>  </span>
-						<span id="physicsp"></span>
+						<span id="proprepp"></span>
 						<span >%</span>
 					</h1>
 					<h1>
-						GP : 
-						<span id="gp"></span>
+						INTERNSHIP : 
+						<span id="internship"></span>
 						<span>  </span>
-						<span id="gpp"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						PE GEOLOGY : 
-						<span id="pegeology"></span>
-						<span>  </span>
-						<span id="pegeologyp"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						LANGUAGES : 
-						<span id="lang"></span>
-						<span>  </span>
-						<span id="langp"></span>
-						<span >%</span>
-					</h1>
-					<h1>
-						PROF PREP : 
-						<span id="profprep"></span>
-						<span>  </span>
-						<span id="profprepp"></span>
+						<span id="internshipp"></span>
 						<span >%</span>
 					</h1>
 				</div>
@@ -741,12 +665,9 @@
 					<h1>
 						ADVICE : 
 						<span id="advicegpa"></span><br><br>  
-						<span id="advicemath"></span><br><br>  
-						<span id="advicephy"></span><br><br>  
-						<span id="advicegp"></span><br><br>  
-						<span id="advicepegeology"></span><br><br>  
-						<span id="advicelang"></span><br><br>  
-						<span id="adviceprofprep"></span>
+						<span id="advicegeores"></span><br><br>  
+						<span id="adviceproprep"></span><br><br>  
+						<span id="adviceinternship"></span>
 					</h1>
 				</div>
 
@@ -775,27 +696,18 @@
 						function drawChart() {
 						  // Set Data
 						  const data = google.visualization.arrayToDataTable([
-                                ['Activity', 'Value', { role: 'annotation' }, { role: 'style' }],
-                                ['RESERVOIR', 2, 'RESERVOIR', 'color: #c20000'],  // Light Purple
-                                ['SEISMIC', 2, 'SEISMIC', 'color: #c94f4f'],  // Light Purple
-                                ['WELL', 2, 'WELL', 'color: #c97171'],  // Dark Purple
-                                ['PETREL', 2, 'PETREL', 'color: #f5abad'],  // Dark Purple
-                                ['EARTH RHEOLOGY', 1.6, 'EARTH RHEOLOGY', 'color: #c4be00'],  // Dark Purple
-                                ['GEOLOGY AZ', 1.6, 'GEOAZ', 'color: #73c734'],  // Light Purple
-                                ['FLUID EXAM', 1, 'FLUID EXAM', 'color: #51f5cc'],  // Dark Purple
-                                ['MATH FINAL', 1, 'MATH FINAL', 'color: #000ba1'],  // Dark Purple
-                                ['FRENCH ORAL', 0.75, 'FRENCH ORAL', 'color: #db009a'],  // Light Purple
-                                ['FRENCH FINAL', 0.75, 'FRENCH FINAL', 'color: #db009a'],  // Dark Purple
-                                ['ACAD WRITING MID', 0.67, 'ACAD WRITING MID', 'color: #ffa600'],  // Light Purple
-                                ['ACAD WRITING MID2', 0.67, 'ACAD WRITING MID2', 'color: #ffa600'],  // Dark Purple
-                                ['FLUID PW', 0.67, 'FLUID PW', 'color: #51f5cc'],  // Light Purple
-                                ['ACAD WRITING FINAL', 0.67, 'ACAD WRITING FINAL', 'color: #ffa600'],  // Light Purple
-                                ['FRENCH MID', 0.5, 'FRENCH MID', 'color: #db009a'],  // Dark Purple
-                                ['MATH MID', 0.5, 'MATH MID', 'color: #000ba1'],  // Dark Purple
-                                ['MATH MID2', 0.5, 'MATH MID2', 'color: #000ba1'],  // Light Purple
-                                ['REMOTE PW', 0.4, 'REMOTE PW', 'color: #c2be53'],  // Light Purple
-                                ['REMOTE ORAL', 0.4, 'REMOTE ORAL', 'color: #c2be53'],  // Dark Purple
-                                ['FLUID LAB', 0.33, 'FLUID LAB', 'color: #51f5cc'],  // Light Purple
+    ['Activity', 'Value', { role: 'annotation' }, { role: 'style' }],
+    ['INTERNSHIP DEFENSE', 4, 'IN DEF', 'color: #d32f2f'],  // Dark Red
+    ['INTERNSHIP REPORT', 4, 'IN REP', 'color: #d32f2f'],  // Dark Red
+    ['INTERNSHIP SUPERVISOR', 2, 'IN SUP', 'color: #d32f2f'],  // Dark Red
+    ['ENERGY TRANSITION AND GEOTHERMAL ENERGY', 1.6, 'ETRANS', 'color: #000566'],  // Orange
+    ['RESERVOIR SIMULATION', 1.6, 'RESERVOIR', 'color: #0c138a'],  // Orange
+    ['PRODUCTION ENGINEERING & TECHNOLOGY', 1.6, 'PRODUCTION', 'color: #1e27b3'],  // Orange
+    ['OIL & GAS RESOURCES', 1.6, 'O&G RES', 'color: #333ed4'],  // Orange
+    ['RISKS MANAGEMENT IN OIL&GAS INDUSTRY', 1.6, 'RISK', 'color: #5965ff'],  // Yellow
+    ['MANAGEMENT & ENTREPRENEURSHIP 1', 0.67, 'M&E 1', 'color: #4caf50'],  // Green
+    ['MANAGEMENT & ENTREPRENEURSHIP 2', 0.67, 'M&E 2', 'color: #4caf50'],  // Green
+    ['MANAGEMENT & ENTREPRENEURSHIP 3', 0.67, 'M&E 3', 'color: #4caf50'],  // Green
 ]);
 
 					  
