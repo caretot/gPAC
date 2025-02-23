@@ -1,5 +1,3 @@
-
-
 async function fetchStudentData() {
   const studentId = document.getElementById("studentId").value;
   if (!studentId) {
@@ -8,7 +6,7 @@ async function fetchStudentData() {
   }
 
   try {
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/CS!AI6:BA49?key=${API_KEY}`;
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/PE!AC6:AV32?key=${API_KEY}`;
     const response = await fetch(url);
     const data = await response.json();
     const rows = data.values;
@@ -17,8 +15,7 @@ async function fetchStudentData() {
     const studentRow = rows.find(row => row[1] === studentId);
 
     if (studentRow) {
-      const studentDetails = document.getElementById("studentDetails");
-      studentDetails.style.display = "block";
+      document.getElementById("studentDetails").style.display = "block";
 
       const generalInfoTable = document.querySelector("#generalInfoTable tbody");
       const academicScoresTable = document.querySelector("#academicScoresTable tbody");
@@ -58,10 +55,10 @@ studentRow.slice(8, 11).forEach((cell) => {
 });
 
 // Chart configuration
-const xValues = ["CS", "PROFESSIONAL PREPARATION", "INTERNSHIP", "MISSED"];
-const barColors = [ "#3C9D4E", "#7031AC", "#C94D6D", "#000000"]; // Black color for MISSED
+const xValues = ["GEORESOURCES",  "PROFESSIONAL PREPARATION", "INTERNSHIP","MISSED"];
+const barColors = ["#2269AD", "#7031AC", "#C94D6D", "#000000"]; // Black color for MISSED
 
-const RANGE = "CS!AQ4:AS4";  // The range to fetch data from
+const RANGE = "PE!AK4:AM4";  // The range to fetch data from
 
 // Function to fetch data from the specified range in Google Sheets
 async function fetchSheetData2() {
@@ -175,7 +172,9 @@ async function createChart() {
   // Extract the sorted values and labels
   const sortedValues = sortedData.map(item => item.value);
   const sortedLabels = sortedData.map(item => item.label);
-  
+
+
+
   // Combine the data
   let combinedData = xValues.map((label, index) => ({
     label: label,
@@ -197,7 +196,7 @@ async function createChart() {
 
 
 
-
+  
   // Create the trace for a pie chart
   const trace = {
     labels: sortedXValues,  // Sorted labels
@@ -257,12 +256,35 @@ createChart();
 
 
 
+  
 
 
 
 
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -270,13 +292,12 @@ createChart();
       const specializedSubjectsRow = document.createElement('tr');
       studentRow.slice(11).forEach((cell, index) => {
         const td = document.createElement('td');
-        td.setAttribute('data-label', headerRow[index + 12]);
+        td.setAttribute('data-label', headerRow[index + 11]);
         td.textContent = cell;
         specializedSubjectsRow.appendChild(td);
       });
       specializedSubjectsTable.appendChild(specializedSubjectsRow);
 
-      
       // Color coding for the △ Rank column
       const deltaRankCell = generalInfoRow.lastElementChild;
       const deltaRankValue = parseInt(deltaRankCell.textContent, 10);
@@ -290,6 +311,7 @@ createChart();
     console.error("Error fetching student data:", error);
   }
 }
+
 
 
 

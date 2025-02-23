@@ -23,7 +23,7 @@
   <script src="/gPAC/js2/modernizr.custom.js"></script>
   <link rel="stylesheet" href="/gPAC/santa css/style.css">
   <script src="https://apis.google.com/js/api.js"></script>
-  <script src="/gPAC/minemeter/licence3/s1/ce/script.js"></script> <!-- Link to your external JS file -->
+  <script src="/gPAC/minemeter/licence3/s2/ge/script.js"></script> <!-- Link to your external JS file -->
 
 
 </head>
@@ -104,11 +104,12 @@
     
         <center><h1 class="pageheader">MINEMETER</h1></center>
     
-      
+    
+    
     
         
         <section class="section1">
-            <h2><a href="/gPAC/minemeter/minemeter.html" style="color: rgb(207, 179, 0);font-size: 200%;">·</a><a style="color: white;" href="/gPAC/minemeter/minemeter.html"> L3S1 CE</a></h2>
+            <h2><a href="/gPAC/minemeter/minemeter.html" style="color: rgb(207, 179, 0);font-size: 200%;">·</a><a style="color: white;" href="/gPAC/minemeter/minemeter.html"> L3S2 PE</a></h2>
             <div class="container demo-2c">	
               <div class="main clearfix">
                 <div class="column">
@@ -192,14 +193,14 @@
 
             <br><br>
             <div class="responsive-container-block">
-              <a href="/gPAC/rankometer/licence3/s1/all21l2s1.html">
+              <a href="/gPAC/rankometer/licence3/s2/ge21l3s1.html">
                 <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
                   <div class="team-card">
                     <div class="img-wrapper">
-                        <p class="whatyouneed" id="maxgpacs"></p>
+                        <p class="whatyouneed" id="maxgpage"></p>
                     </div>
                     <p class="text-blk name" style="color: aquamarine;">
-                      Max GPA <br>CS
+                      Max GPA <br>PE
                     </p>
                   </div>
                 </div>
@@ -258,23 +259,22 @@
             <script>
               
   // Google Sheets configuration
-  const sheetId = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
-  const apiKey = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
-  
+  const SHEET_ID = '1l_eQ642rNyE0LyXYnV_LjUPAJPQ0ynmJq2axl-h7dQQ';
+  const API_KEY = 'AIzaSyBIVnLeCJ1jlC9XY06t8Wrv-z1Nd6FZaQk';
   // Mapping of element IDs to Google Sheets cell references
   const cellMappings = {
-    maxgpacs: 'CE!D149',   // Max GPA (CE)
-    date: 'CE!E149',       // Last Modified Date
-    examrank: 'CE!F149',   // Exam Rank
-    cgpaaver: 'CE!D151',   // CGPA Average
-    gpaaver: 'CE!E151',    // GPA Average
-    percaver: 'CE!F151'    // Percentage Average
+    maxgpage: 'PE!D97',   // Max GPA (GE)
+    date: 'PE!E97',       // Last Modified Date
+    examrank: 'PE!F97',   // Exam Rank
+    cgpaaver: 'PE!D99',   // CGPA Average
+    gpaaver: 'PE!E99',    // GPA Average
+    percaver: 'PE!F99'    // Percentage Average
   };
 
   // Function to fetch and display data
   function fetchData() {
     Object.entries(cellMappings).forEach(([elementId, cellRange]) => {
-      const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${cellRange}?key=${apiKey}`;
+      const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${cellRange}?key=${API_KEY}`;
       
       const element = document.getElementById(elementId);
       element.style.opacity = 0; // Hide the element initially
@@ -306,43 +306,97 @@
             </script>
             
 
-              <a href="https://wa.link/u1hb3y">
-              <button class="button-64" role="button"><span class="text">
-                <i class='far'>&#xf044;</i> Report issue</span></button>
-            </a>
-        </section>
+            <a href="https://wa.link/u1hb3y">
+            <button class="button-64" role="button"><span class="text">
+              <i class='far'>&#xf044;</i> Report issue</span></button>
+            </a><br><br><br><br>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;" class="rahatciliq">
+              <a href="/gPAC/minemeter/licence3/s2/cs/cs21l3s2.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" class="icon">
+              </a>
+              <a href="/gPAC/minemeter/licence3/s2/ce/ce21l3s2.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/10296/10296400.png" alt="" class="icon">
+              </a>
+              <a href="/gPAC/minemeter/licence3/s2/ge/ge21l3s2.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/13628/13628415.png" alt="" class="icon">
+              </a>
+              <a href="/gPAC/minemeter/licence3/s2/pe/pe21l3s2.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/8044/8044304.png" alt="" class="icon">
+              </a>
+            </div>
+            
+            <style>
+              .rahatciliq {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+              }
+            
+              .icon {
+                height: 70px;
+                width: 70px;
+                opacity: 50%;
+                margin: 20px;
+                filter: grayscale(100%);
+                transition: filter 0.3s ease, opacity 0.3s ease;
+              }
+            
+              /* Remove grayscale and adjust opacity for the last icon */
+              .rahatciliq a:last-child .icon {
+                filter: grayscale(0%);
+                opacity: 100%;
+              }
+            
+              /* Mobile adjustments */
+              @media (max-width: 768px) {
+                .icon {
+                  height: 35px;
+                  width: 35px;
+                  margin: 10px;
+                }
+              }
+            </style></section>
+
+
 <br><br><br><hr><br><br><br>
         
-          <div class="student-info-page">
-            <div class="container123">
-              <label for="container123">Name to ID</label>
-              <div class="search-container">
-                <div class="search-wrapper">
-                  <input type="text" id="search-box" placeholder="Name, ID, Faculty" autocomplete="off"/>
-                  <button id="clear-button123" class="clear-button123">&times;</button>
-                </div>
-                <div id="results">
-                  <table class="animated-table specific-table">
-                    <thead id="table-header">
-                      <tr>
-                        <th>ID</th>
-                        <th>FAC</th>
-                        <th>NAME</th>
-                      </tr>
-                    </thead>
-                    <tbody id="table-body">
-                      <!-- Rows will be added dynamically -->
-                    </tbody>
-                  </table>
-                  <div id="no-results" style="display: none;font-size: large;">No results found</div>
-                </div>
+        
+        
+        
+        <div class="student-info-page">
+          <div class="container123">
+            <label for="container123">Name to ID</label>
+            <div class="search-container">
+              <div class="search-wrapper">
+                <input type="text" id="search-box" placeholder="Name, ID, Faculty" autocomplete="off"/>
+                <button id="clear-button123" class="clear-button123">&times;</button>
+              </div>
+              <div id="results">
+                <table class="animated-table specific-table">
+                  <thead id="table-header">
+                    <tr>
+                      <th>ID</th>
+                      <th>FAC</th>
+                      <th>NAME</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-body">
+                    <!-- Rows will be added dynamically -->
+                  </tbody>
+                </table>
+                <div id="no-results" style="display: none;font-size: large;">No results found</div>
               </div>
             </div>
-            <script src="/gPAC/minemeter/licence3/s1/all/all.js"></script>
-            <link rel="stylesheet" href="/gPAC/minemeter/licence3/s1/all/all.css">
-          
+          </div>
+          <script src="/gPAC/minemeter/licence3/s1/all/all.js"></script>
+          <link rel="stylesheet" href="/gPAC/minemeter/licence3/s1/all/all.css">
         
-        
+      
+      
+
+
+
+            
             <!-- Input for Student ID -->
             <label for="studentId">Enter Student ID:</label>
             <input type="number" id="studentId" placeholder="221222XX" inputmode="numeric"><br>
@@ -392,6 +446,7 @@
 
 
 
+
             <!-- Tables for Student Details -->
             <div id="studentDetails" style="display: none;">
               <!-- Table 1: General Information -->
@@ -417,12 +472,10 @@
               <table id="academicScoresTable">
                 <thead>
                   <tr>
-                    <th>Math</th>
-                    <th>PHY-CH</th>
-                    <th>CH-ENG</th>
-                    <th>Language</th>
-                    <th>Professional Preparation</th>
-                  </tr>
+                    <th>GEORESOURCES</th>
+                    <th>PROFESSIONAL PREPARATION</th>
+                    <th>INTERNSHIP</th>
+                </tr>                
                 </thead>
                 <tbody></tbody>
               </table>
@@ -432,43 +485,41 @@
               <table id="specializedSubjectsTable">
                 <thead>
                   <tr>
-                    <th>ODE PDE</th>
-                    <th>Polymers</th>
-                    <th>Analytical CH</th>
-                    <th>Exp CH</th>
-                    <th>Applied CH</th>
-                    <th>Systems</th>
-                    <th>Catalysis</th>
-                    <th>Exp Ch Eng</th>
-                    <th>Process</th>
-                    <th>Ch Eng Proj</th>
-                    <th>French</th>
-                    <th>Academic Writing</th>
-                  </tr>
+                    <th>MINERAL RES</th>
+                    <th>OIL & GAS RES</th>
+                    <th>WATER RES</th>
+                    <th>ENERGY T</th>
+                    <th>GEOCHEM</th>
+                    <th>MAN & ENT</th>
+                    <th>INTERNSHIP SUP</th>
+                    <th>INTERNSHIP DEF</th>
+                    <th>INTERNSHIP REP</th>
+                </tr>
+                
                 </thead>
                 <tbody></tbody>
               </table>
 
-                <!-- Pie Chart Canvas -->
+              <!-- Pie Chart Canvas -->
 
-              <script src="script.js"></script>
-              <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <script src="script.js"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-              <h2>Student CGPA Chart</h2><center>
-              <div id="myChart" class="piechart123"></div>  <!-- Plotly renders inside a div -->
-            </center>
-
-
-            </div>
+            <h2>Student CGPA Chart</h2><center>
+            <div id="myChart" class="piechart123"></div>  <!-- Plotly renders inside a div -->
+          </center>
 
 
           </div>
-        <script src="script.js"></script>
-        
+
+
+        </div>
+      <script src="script.js"></script>
+      
 
 
 
-      <footer class="footer">
+    <footer class="footer">
         <ul class="social-icon">
           <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/fuad.ildarov.3">
               <ion-icon name="logo-facebook"></ion-icon>
