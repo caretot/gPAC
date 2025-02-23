@@ -17,6 +17,9 @@
 <body style="background-color: rgba(35,31,32,255);">
 <div>
 
+    
+  <link rel="stylesheet" href="/gPAC/navbar.css">
+
   <header style="background-color: rgb(76, 76, 76);">
     <div class="nav__container" style="background-color: rgb(76, 76, 76);">
       <div class="nav__mobile">     
@@ -26,24 +29,34 @@
           <a aria-label="Mobile menu" class="nav-toggle fade"><span></span><span class="mrg"></span><span class="mrg"></span></a>
         </div>
       </div>
-        <nav class="menu-toggle">
-          <ul class="nav__menu"><br>
-            <li><a href="/gPAC/index.html">HOME</a></li>
-                <li class="dropdown"><a href="javascript:void(0)" style="color: rgb(0,251,251);text-decoration:none;">METERTOOLS </a>
-              <ul>
-                <li><a href="/gPAC/rankometer/rankometer.html">RANKOMETER</a></li>
-                <li><a href="/gPAC/gpameter/gpameter.html">GPAMETER</a></li>
-                <li><a href="/gPAC/fenometer/fenometer.html" style="color: rgb(0,251,251);text-decoration:none;">FENOMETER</a></li>
-                <li><a href="/gPAC/minemeter/minemeter.html">MINEMETER</a></li>
-              </ul>
-            </li>
-            <li><a href="/gPAC/about.html">ABOUT</a></li>
-            <li><a href="/gPAC/team.html">TEAM</a></li>
-            <li><a href="https://wa.link/u1hb3y">CONTACT</a></li>
-          </ul>
-        </nav>
+      <nav class="menu-toggle">
+        <ul class="nav__menu">
+          <li><a href="/gPAC/index.html">HOME</a></li>
+      
+          <li class="custom-dropdown">
+            <a href="javascript:void(0)" class="custom-dropdown-toggle active_a">
+              METERTOOLS <i class="arrow down"></i>
+            </a>
+            <ul class="custom-dropdown-menu">
+              <li><a href="/gPAC/rankometer/rankometer.html">RANKOMETER</a></li>
+              <li><a href="/gPAC/gpameter/gpameter.html">GPAMETER</a></li>
+              <li><a href="/gPAC/fenometer/fenometer.html" class="active_a">FENOMETER</a></li>
+              <li><a href="/gPAC/minemeter/minemeter.html">MINEMETER</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="/gPAC/about.html">ABOUT</a></li>
+          <li><a href="/gPAC/team.html">TEAM</a></li>
+          <li><a href="https://wa.link/u1hb3y">CONTACT</a></li>
+        </ul>
+      </nav>
+      
+      
     </div>
   </header>
+<script src="/gPAC/navbar.js"></script>
+
+  
 
 
 
@@ -100,7 +113,6 @@
                     <ul class="dl-submenu">
                       <li><a href="/gPAC/fenometer/licence1/sem1">Semester 1</a></li>
                       <li><a href="/gPAC/fenometer/licence1/sem2">Semester 2</a></li>
-                      <li><a href="/gPAC/fenometer/licence1/lic1">Licence 1</a></li>
                     </ul>
                   </li>
                   <li>
@@ -108,7 +120,6 @@
                     <ul class="dl-submenu">
                       <li><a href="/gPAC/fenometer/licence2/sem1">Semester 1</a></li>
                       <li><a href="/gPAC/fenometer/licence2/sem1">Semester 2</a></li>
-                      <li><a href="/gPAC/fenometer/licence2/lic2">Licence 2</a></li>
                     </ul>
                   </li>
                   <li>
@@ -116,7 +127,6 @@
                     <ul class="dl-submenu">
                       <li><a href="/gPAC/fenometer/licence3/sem1">Semester 1</a></li>
                       <li><a href="/gPAC/fenometer/licence3/sem2">Semester 2</a></li>
-                      <li><a href="/gPAC/fenometer/licence3/lic3">Licence 3</a></li>
                     </ul>
                   </li>
                 </ul>

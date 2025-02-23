@@ -1,0 +1,300 @@
+@media (min-width:768px)  {
+    .nav__menu li{
+        margin: auto;
+        z-index: 10000000;
+    }
+    .nav__menu li a{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 8px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #6d6d6d;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* CSS Arrow */
+    .arrow {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        transform: rotate(-45deg);
+        margin-left: 8px;
+        margin-bottom: 3.5px;
+        transition: transform 0.2s ease;
+    }
+    
+    /* Rotate arrow when dropdown is open */
+    .custom-dropdown.open .arrow {
+        transform: rotate(-585deg);
+        margin-bottom: -2px;
+    }
+    
+    
+    /* Default Dropdown Menu (Desktop) with smooth transition */
+    .custom-dropdown-menu {
+        position: absolute;
+        top: 100%; /* Places it below the button */
+        left: 50%; /* Start positioning from the center */
+        transform: translateX(-50%);
+        min-width: 141.66px;
+        width: 100px; /* Adjust width as needed */
+        list-style: none;
+        background-color: #6d6d6d;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        border-radius: 5px;
+        z-index: 1000;
+        overflow: hidden;
+        /* Smooth opening/closing properties */
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+  
+    /* Dropdown Menu Items */
+    .custom-dropdown-menu li{
+        display: block;
+        padding: 0;
+    }
+  
+    .custom-dropdown-menu li a {
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        align-items: left;
+        font-size: 0.9rem;
+        min-height: 50px;
+        border-radius: 0px;
+        vertical-align: middle;
+        padding-left: 15px;
+    }
+  
+    .custom-dropdown-menu li a:hover {
+        border-radius: 0px;
+    }
+  
+    /* Show dropdown smoothly when 'open' class is added */
+    .custom-dropdown.open .custom-dropdown-menu {
+        max-height: 500px; /* Adjust height as needed */
+        opacity: 1;
+        visibility: visible;
+    }
+  
+    /* Dropdown Container */
+    .custom-dropdown {
+        position: relative;
+        display: inline-block; /* Ensures button and menu align properly */
+    }
+  
+    /* Dropdown Button */
+    .custom-dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+    }
+  
+    /* Ensure `.active` styles the <a> inside */
+    .active_a {
+        color: rgb(0, 251, 251) !important;
+        background-color: #000000c1 !important; /* Darker background */
+    }
+    .active_a:hover {
+        background-color: #333 !important;
+        transition: background-color 0.3s ease !important;
+    }
+    .nav__menu li a:hover {
+        background-color: #333;
+        transition: background-color 0.3s ease;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile View: Make Dropdown Full-Width */
+@media (max-width: 768px) {
+    
+    .nav__menu {
+        transition: margin-top 0.3s ease, height 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: 0rem solid rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+
+    .nav__menu li {
+        list-style: none;
+        padding: 0px 0px 0px;
+        border: 0rem solid rgb(255, 255, 255);
+        z-index: 1000000000000;
+    }
+
+    .nav__menu li a {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #6d6d6d;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        width: 100%;
+        padding-left: 30px;
+        min-height: 64px;
+    }
+
+    /* Ensure that "ABOUT", "TEAM", and "CONTACT" are pushed down smoothly */
+    .custom-dropdown.open ~ li {
+        transition:  0.3s ease;
+    }
+
+    .custom-dropdown:not(.open) ~ li {
+        margin-top: 0;
+        transition: margin-top 0.3s ease;
+    }
+
+    /* CSS Arrow */
+    .arrow {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        transform: rotate(-45deg);
+        margin-left: 8px;
+        margin-bottom: 1px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Rotate arrow when dropdown is open */
+    .custom-dropdown.open .arrow {
+        transform: rotate(-585deg);
+        margin-bottom: -2px;
+    }
+
+    /* Smooth Opening & Closing Dropdown Menu */
+    .custom-dropdown-menu {
+        width: 100%;
+        list-style: none;
+        background-color: #6d6d6d;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        z-index: 1000;
+        padding: 0px 0;
+        border: 0rem solid rgb(255, 255, 255);
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.4s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out, padding 0.3s ease-out;
+    }
+
+    /* Dropdown Menu Items */
+    .custom-dropdown-menu li {
+        display: block;
+        padding: 0px 0;
+        text-align: center;
+        border: 0rem solid rgb(255, 255, 255);
+    }
+
+    .custom-dropdown-menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 0px 65px;
+        transition: background-color 0.3s ease;
+        text-align: left;
+        min-height: 54px;
+        vertical-align: middle;
+        background-color: #464646;
+    }
+
+    .custom-dropdown-menu li a:hover {
+        background-color: #555;
+    }
+
+    /* Show dropdown properly and push navbar down smoothly */
+    .custom-dropdown.open .custom-dropdown-menu {
+        max-height: 300px; /* Adjust as needed */
+        opacity: 1;
+        visibility: visible;
+        padding: 0px 0;
+    }
+
+    /* Dropdown Container */
+    .custom-dropdown {
+        display: block;
+        text-align: center;
+    }
+
+    /* Dropdown Button */
+    .custom-dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+
+    /* Ensure `.active` styles the <a> inside */
+    .active_a {
+        color: rgb(0, 251, 251) !important;
+        background-color: #000000c1 !important; /* Darker background */
+      }
+      .active_a:hover {
+        background-color: #333 !important;
+        transition: background-color 0.3s ease !important;
+      }
+      .nav__menu li a:hover {
+        background-color: #333;
+        transition: background-color 0.3s ease;
+      }
+    
+}
