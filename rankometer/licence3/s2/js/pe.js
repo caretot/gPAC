@@ -1,10 +1,10 @@
   // Google Sheets configuration
-  const sheetId = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
-  const apiKey = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
+  const sheetId = '1l_eQ642rNyE0LyXYnV_LjUPAJPQ0ynmJq2axl-h7dQQ';
+  const apiKey = 'AIzaSyBIVnLeCJ1jlC9XY06t8Wrv-z1Nd6FZaQk';
   
   // Mapping of element IDs to Google Sheets cell references
   const cellMappings = {
-    maxgpage: 'PE!D97',   // Max GPA (PE)
+    maxgpage: 'PE!D97',   // Max GPA (GE)
     date: 'PE!E97',       // Last Modified Date
     examrank: 'PE!F97',   // Exam Rank
     cgpaaver: 'PE!D99',   // CGPA Average
@@ -46,8 +46,8 @@
 
 
 
-  const API_KEY = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
-const SHEET_ID = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
+  const API_KEY  = 'AIzaSyBIVnLeCJ1jlC9XY06t8Wrv-z1Nd6FZaQk';
+const SHEET_ID = '1l_eQ642rNyE0LyXYnV_LjUPAJPQ0ynmJq2axl-h7dQQ';
 const RANGE = 'PE!B67:I93'; // Range for table data
 
 // Fetch data from Google Sheets
@@ -106,14 +106,17 @@ fetchTableData();
 
 
 
-const range = 'YESNO!G2:H21';
+
+
+const range = 'YESNO!G2:H12';
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
 
 const labels = [
-  'MATH MID1', 'MATH MID2', 'MATH FINAL', 'FLUID COMSOL', 'FLUID EXAM', 'FLUID LAB', 'EARTH RHEOLOGY',
-  'GEO AZ', 'REMOTE PW', 'REMOTE ORAL', 'SEISMIC', 'WELL', 'RESERVOIR', 'PETREL',
-  'FRENCH ORAL', 'FRENCH MID', 'FRENCH FINAL', 'AC WRITING 1', 'AC WRITING 2', 'AC WRITING 3'
+  'ENERGY', 'RESERVOIR', 'PRODUCTION', 'OIL & GAS', 'RISK', 
+  'MANAG', 'ENTREP', 'MAN&ENT EXAM', 'INTERN SUP', 
+  'INTERN DEF', 'INTERN REP'
 ];
+
 
 
 

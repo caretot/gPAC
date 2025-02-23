@@ -1,6 +1,6 @@
   // Google Sheets configuration
-  const sheetId = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
-  const apiKey = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
+  const sheetId = '1l_eQ642rNyE0LyXYnV_LjUPAJPQ0ynmJq2axl-h7dQQ';
+  const apiKey = 'AIzaSyBIVnLeCJ1jlC9XY06t8Wrv-z1Nd6FZaQk';
   
   // Mapping of element IDs to Google Sheets cell references
   const cellMappings = {
@@ -49,8 +49,8 @@
 
 
 
-  const API_KEY = 'AIzaSyAo4hQ5dIJhdQ-gWgqdKk1_UPfq_f6rPJI';
-const SHEET_ID = '142pB0ybiABHPxPc_GXMOZfg3GIa_MSeSKSdWRHhbtK4';
+  const SHEET_ID = '1l_eQ642rNyE0LyXYnV_LjUPAJPQ0ynmJq2axl-h7dQQ';
+  const API_KEY = 'AIzaSyBIVnLeCJ1jlC9XY06t8Wrv-z1Nd6FZaQk';
 const RANGE = 'ALL!B1:I135'; // Range for table data
 
 // Fetch data from Google Sheets
